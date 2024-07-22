@@ -1,0 +1,201 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dudat\OneDrive\Área de Trabalho\MIC1 - Maira e Maria Eduarda\simulation\qsim
+vregister_4bit
+Z1 I=_6f_TiQiM=5:3>5@QlM=3
+Z2 VjPoAcF?h<[;Xji5j2kIPB0
+Z3 dC:\Users\maira\OneDrive - aluno.cefetmg.br\Documentos\AOC-I\MIC1 - Maira e Maria Eduarda\MIC1 - Maira e Maria Eduarda\simulation\qsim
+Z4 w1721041758
+Z5 8MIC1.vo
+Z6 FMIC1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|MIC1.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 aNVkfPm9Le1k7zI=Zk54G1
+!s85 0
+Z11 !s108 1721041759.725000
+Z12 !s107 MIC1.vo|
+!s101 -O0
+vregister_4bit_vlg_check_tst
+!i10b 1
+!s100 V^<@D9e4BgW5i[aeD_FdW2
+Io?2eHba6O>`gY3>BOYDHO3
+VMgQ?@BO?[0JNPm[B`[`e_0
+R3
+Z13 w1721041757
+Z14 8MIC1.vt
+Z15 FMIC1.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1721041759.892000
+Z17 !s107 MIC1.vt|
+Z18 !s90 -work|work|MIC1.vt|
+!s101 -O0
+R9
+vregister_4bit_vlg_sample_tst
+!i10b 1
+!s100 Z;NR]^aU:9Bc86_G[:FlZ2
+Ib>^ce3d^=G``3XGCAX;nz1
+V2@l^K:Q28zgdCEoZ7FA5U3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vregister_4bit_vlg_vec_tst
+!i10b 1
+!s100 @Y:cWbj@88iikWhSJOm2X0
+I4;jU@P@3oA9jOMJ?^mE`02
+V7WT<>_InXjA7Uc0g_9RYm0
+R3
+R13
+R14
+R15
+L0 207
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vShifter
+Z19 !s100 ^13b5zOULM?]iI2g5BSha0
+Z20 IF6jAS4c]LkGQYhkL_Q:ML3
+Z21 V?G`?YIE>Dzd[_:mIU[EGz2
+R3
+Z22 w1721038785
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z23 n@shifter
+Z24 !s108 1721038786.566000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vShifter_vlg_check_tst
+Z25 !s100 amazlVUANOg2O9I[`5^:z2
+Z26 IT`a0W5mz8O0;4fVmdl8510
+Z27 VLB?YPU:Jfkf0W::RSQ49g0
+R3
+Z28 w1721038784
+R14
+R15
+L0 59
+R7
+r1
+31
+Z29 !s108 1721038786.780000
+Z30 !s107 MIC1.vt|
+R18
+R9
+Z31 n@shifter_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vShifter_vlg_sample_tst
+Z32 !s100 zoX_E;[OUn=3HP^KIUgoH1
+Z33 If4ZJ<[O`b27KjOPWeBfY`1
+Z34 VMTZ79WOY3k2HS1l[CEV]20
+R3
+R28
+R14
+R15
+L0 29
+R7
+r1
+31
+R29
+R30
+R18
+R9
+Z35 n@shifter_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vShifter_vlg_vec_tst
+Z36 IRN51O<6iLUN=8@CiUg[FR1
+Z37 VThP1n42I@5dzVoEFm@_mS2
+R3
+R28
+R14
+R15
+Z38 L0 765
+R7
+r1
+31
+R29
+R30
+R18
+R9
+Z39 n@shifter_vlg_vec_tst
+Z40 !s100 HiJ69V2`[hX1SLHMN35d>1
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_32bit
+Z41 !s100 X]ncRBBiOKA`VmAG4:9bG1
+Z42 Ie41H8jg^2L>1mI8m=`aiP1
+Z43 VC@1Qm2C?2M834j65NZ`4W2
+Z44 dC:\Users\dudat\OneDrive\Área de Trabalho\MIC1 - Maira e Maria Eduarda\simulation\qsim
+Z45 w1712537929
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z46 n@u@l@a_32bit
+Z47 !s108 1712537930.357000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_32bit_vlg_vec_tst
+Z48 !s100 M7<Cnk?K`nfWZgLhR1JhZ0
+Z49 IN11H7@>Id>oE5BGm96>3n0
+Z50 VJ=3lTQCEj3_FZ<ZSZ:UI>2
+R44
+Z51 w1712537928
+R14
+R15
+L0 29
+R7
+r1
+31
+R18
+R9
+Z52 n@u@l@a_32bit_vlg_vec_tst
+Z53 !s108 1712537930.514000
+R30
+!i10b 1
+!s85 0
+!s101 -O0
