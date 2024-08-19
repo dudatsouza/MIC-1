@@ -1,5 +1,5 @@
 Fitter report for MIC1
-Mon Aug 19 07:04:09 2024
+Mon Aug 19 07:29:55 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -59,10 +59,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Aug 19 07:04:09 2024           ;
+; Fitter Status                      ; Successful - Mon Aug 19 07:29:55 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; TOS                                             ;
+; Top-level Entity Name              ; CPP                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C70F896I8                                    ;
 ; Timing Models                      ; Final                                           ;
@@ -337,7 +337,7 @@ The pin-out file can be found in C:/Users/dudat/OneDrive/Documentos/ENGENHARIA D
 ; IN_C[8]  ; AE17  ; 7        ; 58           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; IN_C[9]  ; AJ14  ; 8        ; 47           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; LOAD     ; AK25  ; 7        ; 80           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MIR[0]   ; E16   ; 4        ; 47           ; 51           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MIR[0]   ; D16   ; 4        ; 47           ; 51           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[10]  ; AK12  ; 8        ; 38           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[11]  ; D26   ; 4        ; 91           ; 51           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[12]  ; AH10  ; 8        ; 26           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
@@ -366,7 +366,7 @@ The pin-out file can be found in C:/Users/dudat/OneDrive/Documentos/ENGENHARIA D
 ; MIR[33]  ; AE7   ; 8        ; 1            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[34]  ; J29   ; 5        ; 95           ; 36           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[35]  ; AD24  ; 6        ; 95           ; 2            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MIR[3]   ; D16   ; 4        ; 47           ; 51           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MIR[3]   ; E16   ; 4        ; 47           ; 51           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[4]   ; A8    ; 3        ; 18           ; 51           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[5]   ; AG19  ; 7        ; 65           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[6]   ; AJ23  ; 7        ; 76           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
@@ -838,7 +838,7 @@ The pin-out file can be found in C:/Users/dudat/OneDrive/Documentos/ENGENHARIA D
 ; D13      ; 588        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D14      ; 571        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D15      ; 567        ; 3        ; MIR[13]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D16      ; 561        ; 4        ; MIR[3]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D16      ; 561        ; 4        ; MIR[0]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D17      ; 553        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D18      ; 541        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D19      ; 537        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -868,7 +868,7 @@ The pin-out file can be found in C:/Users/dudat/OneDrive/Documentos/ENGENHARIA D
 ; E13      ; 579        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E14      ; 570        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E15      ; 566        ; 3        ; MIR[2]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; E16      ; 560        ; 4        ; MIR[0]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E16      ; 560        ; 4        ; MIR[3]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E17      ; 550        ; 4        ; OUT_B[19]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E19      ; 534        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1379,7 +1379,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |TOS                       ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 102  ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |TOS                ; work         ;
+; |CPP                       ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 102  ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |CPP                ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1489,8 +1489,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IN_C[0]   ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
 ; MIR[2]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
 ; MIR[1]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
-; MIR[0]    ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
 ; MIR[3]    ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
+; MIR[0]    ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
 +-----------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1566,11 +1566,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IN_C[1]             ;                   ;         ;
 ; IN_C[0]             ;                   ;         ;
 ; MIR[2]              ;                   ;         ;
-;      - inst6~0      ; 0                 ; 6       ;
+;      - inst8~0      ; 0                 ; 6       ;
 ; MIR[1]              ;                   ;         ;
-;      - inst6~0      ; 0                 ; 6       ;
-; MIR[0]              ;                   ;         ;
+;      - inst8~0      ; 0                 ; 6       ;
 ; MIR[3]              ;                   ;         ;
+; MIR[0]              ;                   ;         ;
 +---------------------+-------------------+---------+
 
 
@@ -1579,9 +1579,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+-----------------------+
 ; Name    ; Fan-Out               ;
 +---------+-----------------------+
-; inst6~0 ; 32                    ;
-; MIR[3]  ; 1                     ;
+; inst8~0 ; 32                    ;
 ; MIR[0]  ; 1                     ;
+; MIR[3]  ; 1                     ;
 ; MIR[1]  ; 1                     ;
 ; MIR[2]  ; 1                     ;
 +---------+-----------------------+
@@ -1804,8 +1804,8 @@ Critical Warning (169085): No exact pin location assignment(s) for 102 pins of 1
     Info (169086): Pin IN_C[0] not assigned to an exact location on the device
     Info (169086): Pin MIR[2] not assigned to an exact location on the device
     Info (169086): Pin MIR[1] not assigned to an exact location on the device
-    Info (169086): Pin MIR[0] not assigned to an exact location on the device
     Info (169086): Pin MIR[3] not assigned to an exact location on the device
+    Info (169086): Pin MIR[0] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'MIC1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1840,7 +1840,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 32 output pins without output pin load capacitance assignment
     Info (306007): Pin "OUT_B[31]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1882,10 +1882,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/output_files/MIC1.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4982 megabytes
-    Info: Processing ended: Mon Aug 19 07:04:09 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4978 megabytes
+    Info: Processing ended: Mon Aug 19 07:29:55 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+
