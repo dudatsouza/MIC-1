@@ -1,47 +1,49 @@
-|PC
-OUT_B[0] <= register_32bit:inst6.OUTPUT[0]
-OUT_B[1] <= register_32bit:inst6.OUTPUT[1]
-OUT_B[2] <= register_32bit:inst6.OUTPUT[2]
-OUT_B[3] <= register_32bit:inst6.OUTPUT[3]
-OUT_B[4] <= register_32bit:inst6.OUTPUT[4]
-OUT_B[5] <= register_32bit:inst6.OUTPUT[5]
-OUT_B[6] <= register_32bit:inst6.OUTPUT[6]
-OUT_B[7] <= register_32bit:inst6.OUTPUT[7]
-OUT_B[8] <= register_32bit:inst6.OUTPUT[8]
-OUT_B[9] <= register_32bit:inst6.OUTPUT[9]
-OUT_B[10] <= register_32bit:inst6.OUTPUT[10]
-OUT_B[11] <= register_32bit:inst6.OUTPUT[11]
-OUT_B[12] <= register_32bit:inst6.OUTPUT[12]
-OUT_B[13] <= register_32bit:inst6.OUTPUT[13]
-OUT_B[14] <= register_32bit:inst6.OUTPUT[14]
-OUT_B[15] <= register_32bit:inst6.OUTPUT[15]
-OUT_B[16] <= register_32bit:inst6.OUTPUT[16]
-OUT_B[17] <= register_32bit:inst6.OUTPUT[17]
-OUT_B[18] <= register_32bit:inst6.OUTPUT[18]
-OUT_B[19] <= register_32bit:inst6.OUTPUT[19]
-OUT_B[20] <= register_32bit:inst6.OUTPUT[20]
-OUT_B[21] <= register_32bit:inst6.OUTPUT[21]
-OUT_B[22] <= register_32bit:inst6.OUTPUT[22]
-OUT_B[23] <= register_32bit:inst6.OUTPUT[23]
-OUT_B[24] <= register_32bit:inst6.OUTPUT[24]
-OUT_B[25] <= register_32bit:inst6.OUTPUT[25]
-OUT_B[26] <= register_32bit:inst6.OUTPUT[26]
-OUT_B[27] <= register_32bit:inst6.OUTPUT[27]
-OUT_B[28] <= register_32bit:inst6.OUTPUT[28]
-OUT_B[29] <= register_32bit:inst6.OUTPUT[29]
-OUT_B[30] <= register_32bit:inst6.OUTPUT[30]
-OUT_B[31] <= register_32bit:inst6.OUTPUT[31]
+|MDR
+DATA_OUT[0] <= register_32bit:inst6.OUTPUT_MEM[0]
+DATA_OUT[1] <= register_32bit:inst6.OUTPUT_MEM[1]
+DATA_OUT[2] <= register_32bit:inst6.OUTPUT_MEM[2]
+DATA_OUT[3] <= register_32bit:inst6.OUTPUT_MEM[3]
+DATA_OUT[4] <= register_32bit:inst6.OUTPUT_MEM[4]
+DATA_OUT[5] <= register_32bit:inst6.OUTPUT_MEM[5]
+DATA_OUT[6] <= register_32bit:inst6.OUTPUT_MEM[6]
+DATA_OUT[7] <= register_32bit:inst6.OUTPUT_MEM[7]
+DATA_OUT[8] <= register_32bit:inst6.OUTPUT_MEM[8]
+DATA_OUT[9] <= register_32bit:inst6.OUTPUT_MEM[9]
+DATA_OUT[10] <= register_32bit:inst6.OUTPUT_MEM[10]
+DATA_OUT[11] <= register_32bit:inst6.OUTPUT_MEM[11]
+DATA_OUT[12] <= register_32bit:inst6.OUTPUT_MEM[12]
+DATA_OUT[13] <= register_32bit:inst6.OUTPUT_MEM[13]
+DATA_OUT[14] <= register_32bit:inst6.OUTPUT_MEM[14]
+DATA_OUT[15] <= register_32bit:inst6.OUTPUT_MEM[15]
+DATA_OUT[16] <= register_32bit:inst6.OUTPUT_MEM[16]
+DATA_OUT[17] <= register_32bit:inst6.OUTPUT_MEM[17]
+DATA_OUT[18] <= register_32bit:inst6.OUTPUT_MEM[18]
+DATA_OUT[19] <= register_32bit:inst6.OUTPUT_MEM[19]
+DATA_OUT[20] <= register_32bit:inst6.OUTPUT_MEM[20]
+DATA_OUT[21] <= register_32bit:inst6.OUTPUT_MEM[21]
+DATA_OUT[22] <= register_32bit:inst6.OUTPUT_MEM[22]
+DATA_OUT[23] <= register_32bit:inst6.OUTPUT_MEM[23]
+DATA_OUT[24] <= register_32bit:inst6.OUTPUT_MEM[24]
+DATA_OUT[25] <= register_32bit:inst6.OUTPUT_MEM[25]
+DATA_OUT[26] <= register_32bit:inst6.OUTPUT_MEM[26]
+DATA_OUT[27] <= register_32bit:inst6.OUTPUT_MEM[27]
+DATA_OUT[28] <= register_32bit:inst6.OUTPUT_MEM[28]
+DATA_OUT[29] <= register_32bit:inst6.OUTPUT_MEM[29]
+DATA_OUT[30] <= register_32bit:inst6.OUTPUT_MEM[30]
+DATA_OUT[31] <= register_32bit:inst6.OUTPUT_MEM[31]
 LOAD => register_32bit:inst6.LOAD
+CLOCK => inst18.IN0
+CLOCK => register_32bit:inst6.CLOCK
 MIR[0] => inst8.IN0
 MIR[1] => inst8.IN1
 MIR[2] => inst9.IN1
 MIR[3] => inst9.IN0
 MIR[4] => ~NO_FANOUT~
-MIR[5] => ~NO_FANOUT~
-MIR[6] => ~NO_FANOUT~
+MIR[5] => inst13.DATAIN
+MIR[6] => register_32bit:inst6.OUT_MEM_EN
 MIR[7] => ~NO_FANOUT~
-MIR[8] => ~NO_FANOUT~
-MIR[9] => register_32bit:inst6.WRITE_EN
+MIR[8] => inst.IN0
+MIR[9] => ~NO_FANOUT~
 MIR[10] => ~NO_FANOUT~
 MIR[11] => ~NO_FANOUT~
 MIR[12] => ~NO_FANOUT~
@@ -68,7 +70,6 @@ MIR[32] => ~NO_FANOUT~
 MIR[33] => ~NO_FANOUT~
 MIR[34] => ~NO_FANOUT~
 MIR[35] => ~NO_FANOUT~
-CLOCK => register_32bit:inst6.CLOCK
 IN_C[0] => register_32bit:inst6.IN_C[0]
 IN_C[1] => register_32bit:inst6.IN_C[1]
 IN_C[2] => register_32bit:inst6.IN_C[2]
@@ -101,41 +102,73 @@ IN_C[28] => register_32bit:inst6.IN_C[28]
 IN_C[29] => register_32bit:inst6.IN_C[29]
 IN_C[30] => register_32bit:inst6.IN_C[30]
 IN_C[31] => register_32bit:inst6.IN_C[31]
-PROGRAM_COUNTER[0] <= register_32bit:inst6.OUTPUT_MEM[0]
-PROGRAM_COUNTER[1] <= register_32bit:inst6.OUTPUT_MEM[1]
-PROGRAM_COUNTER[2] <= register_32bit:inst6.OUTPUT_MEM[2]
-PROGRAM_COUNTER[3] <= register_32bit:inst6.OUTPUT_MEM[3]
-PROGRAM_COUNTER[4] <= register_32bit:inst6.OUTPUT_MEM[4]
-PROGRAM_COUNTER[5] <= register_32bit:inst6.OUTPUT_MEM[5]
-PROGRAM_COUNTER[6] <= register_32bit:inst6.OUTPUT_MEM[6]
-PROGRAM_COUNTER[7] <= register_32bit:inst6.OUTPUT_MEM[7]
-PROGRAM_COUNTER[8] <= register_32bit:inst6.OUTPUT_MEM[8]
-PROGRAM_COUNTER[9] <= register_32bit:inst6.OUTPUT_MEM[9]
-PROGRAM_COUNTER[10] <= register_32bit:inst6.OUTPUT_MEM[10]
-PROGRAM_COUNTER[11] <= register_32bit:inst6.OUTPUT_MEM[11]
-PROGRAM_COUNTER[12] <= register_32bit:inst6.OUTPUT_MEM[12]
-PROGRAM_COUNTER[13] <= register_32bit:inst6.OUTPUT_MEM[13]
-PROGRAM_COUNTER[14] <= register_32bit:inst6.OUTPUT_MEM[14]
-PROGRAM_COUNTER[15] <= register_32bit:inst6.OUTPUT_MEM[15]
-PROGRAM_COUNTER[16] <= register_32bit:inst6.OUTPUT_MEM[16]
-PROGRAM_COUNTER[17] <= register_32bit:inst6.OUTPUT_MEM[17]
-PROGRAM_COUNTER[18] <= register_32bit:inst6.OUTPUT_MEM[18]
-PROGRAM_COUNTER[19] <= register_32bit:inst6.OUTPUT_MEM[19]
-PROGRAM_COUNTER[20] <= register_32bit:inst6.OUTPUT_MEM[20]
-PROGRAM_COUNTER[21] <= register_32bit:inst6.OUTPUT_MEM[21]
-PROGRAM_COUNTER[22] <= register_32bit:inst6.OUTPUT_MEM[22]
-PROGRAM_COUNTER[23] <= register_32bit:inst6.OUTPUT_MEM[23]
-PROGRAM_COUNTER[24] <= register_32bit:inst6.OUTPUT_MEM[24]
-PROGRAM_COUNTER[25] <= register_32bit:inst6.OUTPUT_MEM[25]
-PROGRAM_COUNTER[26] <= register_32bit:inst6.OUTPUT_MEM[26]
-PROGRAM_COUNTER[27] <= register_32bit:inst6.OUTPUT_MEM[27]
-PROGRAM_COUNTER[28] <= register_32bit:inst6.OUTPUT_MEM[28]
-PROGRAM_COUNTER[29] <= register_32bit:inst6.OUTPUT_MEM[29]
-PROGRAM_COUNTER[30] <= register_32bit:inst6.OUTPUT_MEM[30]
-PROGRAM_COUNTER[31] <= register_32bit:inst6.OUTPUT_MEM[31]
+DATA_IN[0] => register_32bit:inst6.IN_MEM[0]
+DATA_IN[1] => register_32bit:inst6.IN_MEM[1]
+DATA_IN[2] => register_32bit:inst6.IN_MEM[2]
+DATA_IN[3] => register_32bit:inst6.IN_MEM[3]
+DATA_IN[4] => register_32bit:inst6.IN_MEM[4]
+DATA_IN[5] => register_32bit:inst6.IN_MEM[5]
+DATA_IN[6] => register_32bit:inst6.IN_MEM[6]
+DATA_IN[7] => register_32bit:inst6.IN_MEM[7]
+DATA_IN[8] => register_32bit:inst6.IN_MEM[8]
+DATA_IN[9] => register_32bit:inst6.IN_MEM[9]
+DATA_IN[10] => register_32bit:inst6.IN_MEM[10]
+DATA_IN[11] => register_32bit:inst6.IN_MEM[11]
+DATA_IN[12] => register_32bit:inst6.IN_MEM[12]
+DATA_IN[13] => register_32bit:inst6.IN_MEM[13]
+DATA_IN[14] => register_32bit:inst6.IN_MEM[14]
+DATA_IN[15] => register_32bit:inst6.IN_MEM[15]
+DATA_IN[16] => register_32bit:inst6.IN_MEM[16]
+DATA_IN[17] => register_32bit:inst6.IN_MEM[17]
+DATA_IN[18] => register_32bit:inst6.IN_MEM[18]
+DATA_IN[19] => register_32bit:inst6.IN_MEM[19]
+DATA_IN[20] => register_32bit:inst6.IN_MEM[20]
+DATA_IN[21] => register_32bit:inst6.IN_MEM[21]
+DATA_IN[22] => register_32bit:inst6.IN_MEM[22]
+DATA_IN[23] => register_32bit:inst6.IN_MEM[23]
+DATA_IN[24] => register_32bit:inst6.IN_MEM[24]
+DATA_IN[25] => register_32bit:inst6.IN_MEM[25]
+DATA_IN[26] => register_32bit:inst6.IN_MEM[26]
+DATA_IN[27] => register_32bit:inst6.IN_MEM[27]
+DATA_IN[28] => register_32bit:inst6.IN_MEM[28]
+DATA_IN[29] => register_32bit:inst6.IN_MEM[29]
+DATA_IN[30] => register_32bit:inst6.IN_MEM[30]
+DATA_IN[31] => register_32bit:inst6.IN_MEM[31]
+OUT_B[0] <= register_32bit:inst6.OUTPUT[0]
+OUT_B[1] <= register_32bit:inst6.OUTPUT[1]
+OUT_B[2] <= register_32bit:inst6.OUTPUT[2]
+OUT_B[3] <= register_32bit:inst6.OUTPUT[3]
+OUT_B[4] <= register_32bit:inst6.OUTPUT[4]
+OUT_B[5] <= register_32bit:inst6.OUTPUT[5]
+OUT_B[6] <= register_32bit:inst6.OUTPUT[6]
+OUT_B[7] <= register_32bit:inst6.OUTPUT[7]
+OUT_B[8] <= register_32bit:inst6.OUTPUT[8]
+OUT_B[9] <= register_32bit:inst6.OUTPUT[9]
+OUT_B[10] <= register_32bit:inst6.OUTPUT[10]
+OUT_B[11] <= register_32bit:inst6.OUTPUT[11]
+OUT_B[12] <= register_32bit:inst6.OUTPUT[12]
+OUT_B[13] <= register_32bit:inst6.OUTPUT[13]
+OUT_B[14] <= register_32bit:inst6.OUTPUT[14]
+OUT_B[15] <= register_32bit:inst6.OUTPUT[15]
+OUT_B[16] <= register_32bit:inst6.OUTPUT[16]
+OUT_B[17] <= register_32bit:inst6.OUTPUT[17]
+OUT_B[18] <= register_32bit:inst6.OUTPUT[18]
+OUT_B[19] <= register_32bit:inst6.OUTPUT[19]
+OUT_B[20] <= register_32bit:inst6.OUTPUT[20]
+OUT_B[21] <= register_32bit:inst6.OUTPUT[21]
+OUT_B[22] <= register_32bit:inst6.OUTPUT[22]
+OUT_B[23] <= register_32bit:inst6.OUTPUT[23]
+OUT_B[24] <= register_32bit:inst6.OUTPUT[24]
+OUT_B[25] <= register_32bit:inst6.OUTPUT[25]
+OUT_B[26] <= register_32bit:inst6.OUTPUT[26]
+OUT_B[27] <= register_32bit:inst6.OUTPUT[27]
+OUT_B[28] <= register_32bit:inst6.OUTPUT[28]
+OUT_B[29] <= register_32bit:inst6.OUTPUT[29]
+OUT_B[30] <= register_32bit:inst6.OUTPUT[30]
+OUT_B[31] <= register_32bit:inst6.OUTPUT[31]
 
 
-|PC|register_32bit:inst6
+|MDR|register_32bit:inst6
 OUTPUT[0] <= inst9[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst9[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst9[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -405,7 +438,7 @@ OUT_MEM_EN => inst10[1].OE
 OUT_MEM_EN => inst10[0].OE
 
 
-|PC|register_32bit:inst6|register_4bit:inst
+|MDR|register_32bit:inst6|register_4bit:inst
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -422,7 +455,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst2
+|MDR|register_32bit:inst6|register_4bit:inst2
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -439,7 +472,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst4
+|MDR|register_32bit:inst6|register_4bit:inst4
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -456,7 +489,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst5
+|MDR|register_32bit:inst6|register_4bit:inst5
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -473,7 +506,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst6
+|MDR|register_32bit:inst6|register_4bit:inst6
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -490,7 +523,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst7
+|MDR|register_32bit:inst6|register_4bit:inst7
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -507,7 +540,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst8
+|MDR|register_32bit:inst6|register_4bit:inst8
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -524,7 +557,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|PC|register_32bit:inst6|register_4bit:inst3
+|MDR|register_32bit:inst6|register_4bit:inst3
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
