@@ -1,4 +1,4 @@
-|OPC
+|TOS
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -45,8 +45,8 @@ MIR[9] => ~NO_FANOUT~
 MIR[10] => ~NO_FANOUT~
 MIR[11] => ~NO_FANOUT~
 MIR[12] => ~NO_FANOUT~
-MIR[13] => ~NO_FANOUT~
-MIR[14] => register_32bit:inst.WRITE_EN
+MIR[13] => register_32bit:inst.WRITE_EN
+MIR[14] => ~NO_FANOUT~
 MIR[15] => ~NO_FANOUT~
 MIR[16] => ~NO_FANOUT~
 MIR[17] => ~NO_FANOUT~
@@ -103,7 +103,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|OPC|register_32bit:inst
+|TOS|register_32bit:inst
 OUTPUT[0] <= inst9[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst9[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst9[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -373,7 +373,7 @@ OUT_MEM_EN => inst10[1].OE
 OUT_MEM_EN => inst10[0].OE
 
 
-|OPC|register_32bit:inst|register_4bit:inst
+|TOS|register_32bit:inst|register_4bit:inst
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -390,7 +390,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst2
+|TOS|register_32bit:inst|register_4bit:inst2
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -407,7 +407,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst4
+|TOS|register_32bit:inst|register_4bit:inst4
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -424,7 +424,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst5
+|TOS|register_32bit:inst|register_4bit:inst5
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -441,7 +441,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst6
+|TOS|register_32bit:inst|register_4bit:inst6
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -458,7 +458,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst7
+|TOS|register_32bit:inst|register_4bit:inst7
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -475,7 +475,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst8
+|TOS|register_32bit:inst|register_4bit:inst8
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -492,7 +492,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|OPC|register_32bit:inst|register_4bit:inst3
+|TOS|register_32bit:inst|register_4bit:inst3
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
