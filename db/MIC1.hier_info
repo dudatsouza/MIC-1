@@ -1,4 +1,109 @@
-|register_32bit
+|H
+OUT_B[0] <= register_32bit:inst1.OUTPUT[0]
+OUT_B[1] <= register_32bit:inst1.OUTPUT[1]
+OUT_B[2] <= register_32bit:inst1.OUTPUT[2]
+OUT_B[3] <= register_32bit:inst1.OUTPUT[3]
+OUT_B[4] <= register_32bit:inst1.OUTPUT[4]
+OUT_B[5] <= register_32bit:inst1.OUTPUT[5]
+OUT_B[6] <= register_32bit:inst1.OUTPUT[6]
+OUT_B[7] <= register_32bit:inst1.OUTPUT[7]
+OUT_B[8] <= register_32bit:inst1.OUTPUT[8]
+OUT_B[9] <= register_32bit:inst1.OUTPUT[9]
+OUT_B[10] <= register_32bit:inst1.OUTPUT[10]
+OUT_B[11] <= register_32bit:inst1.OUTPUT[11]
+OUT_B[12] <= register_32bit:inst1.OUTPUT[12]
+OUT_B[13] <= register_32bit:inst1.OUTPUT[13]
+OUT_B[14] <= register_32bit:inst1.OUTPUT[14]
+OUT_B[15] <= register_32bit:inst1.OUTPUT[15]
+OUT_B[16] <= register_32bit:inst1.OUTPUT[16]
+OUT_B[17] <= register_32bit:inst1.OUTPUT[17]
+OUT_B[18] <= register_32bit:inst1.OUTPUT[18]
+OUT_B[19] <= register_32bit:inst1.OUTPUT[19]
+OUT_B[20] <= register_32bit:inst1.OUTPUT[20]
+OUT_B[21] <= register_32bit:inst1.OUTPUT[21]
+OUT_B[22] <= register_32bit:inst1.OUTPUT[22]
+OUT_B[23] <= register_32bit:inst1.OUTPUT[23]
+OUT_B[24] <= register_32bit:inst1.OUTPUT[24]
+OUT_B[25] <= register_32bit:inst1.OUTPUT[25]
+OUT_B[26] <= register_32bit:inst1.OUTPUT[26]
+OUT_B[27] <= register_32bit:inst1.OUTPUT[27]
+OUT_B[28] <= register_32bit:inst1.OUTPUT[28]
+OUT_B[29] <= register_32bit:inst1.OUTPUT[29]
+OUT_B[30] <= register_32bit:inst1.OUTPUT[30]
+OUT_B[31] <= register_32bit:inst1.OUTPUT[31]
+LOAD => register_32bit:inst1.LOAD
+MIR[0] => ~NO_FANOUT~
+MIR[1] => ~NO_FANOUT~
+MIR[2] => ~NO_FANOUT~
+MIR[3] => ~NO_FANOUT~
+MIR[4] => ~NO_FANOUT~
+MIR[5] => ~NO_FANOUT~
+MIR[6] => ~NO_FANOUT~
+MIR[7] => ~NO_FANOUT~
+MIR[8] => ~NO_FANOUT~
+MIR[9] => ~NO_FANOUT~
+MIR[10] => ~NO_FANOUT~
+MIR[11] => ~NO_FANOUT~
+MIR[12] => ~NO_FANOUT~
+MIR[13] => ~NO_FANOUT~
+MIR[14] => ~NO_FANOUT~
+MIR[15] => register_32bit:inst1.WRITE_EN
+MIR[16] => ~NO_FANOUT~
+MIR[17] => ~NO_FANOUT~
+MIR[18] => ~NO_FANOUT~
+MIR[19] => ~NO_FANOUT~
+MIR[20] => ~NO_FANOUT~
+MIR[21] => ~NO_FANOUT~
+MIR[22] => ~NO_FANOUT~
+MIR[23] => ~NO_FANOUT~
+MIR[24] => ~NO_FANOUT~
+MIR[25] => ~NO_FANOUT~
+MIR[26] => ~NO_FANOUT~
+MIR[27] => ~NO_FANOUT~
+MIR[28] => ~NO_FANOUT~
+MIR[29] => ~NO_FANOUT~
+MIR[30] => ~NO_FANOUT~
+MIR[31] => ~NO_FANOUT~
+MIR[32] => ~NO_FANOUT~
+MIR[33] => ~NO_FANOUT~
+MIR[34] => ~NO_FANOUT~
+MIR[35] => ~NO_FANOUT~
+CLOCK => register_32bit:inst1.CLOCK
+IN_C[0] => register_32bit:inst1.IN_C[0]
+IN_C[1] => register_32bit:inst1.IN_C[1]
+IN_C[2] => register_32bit:inst1.IN_C[2]
+IN_C[3] => register_32bit:inst1.IN_C[3]
+IN_C[4] => register_32bit:inst1.IN_C[4]
+IN_C[5] => register_32bit:inst1.IN_C[5]
+IN_C[6] => register_32bit:inst1.IN_C[6]
+IN_C[7] => register_32bit:inst1.IN_C[7]
+IN_C[8] => register_32bit:inst1.IN_C[8]
+IN_C[9] => register_32bit:inst1.IN_C[9]
+IN_C[10] => register_32bit:inst1.IN_C[10]
+IN_C[11] => register_32bit:inst1.IN_C[11]
+IN_C[12] => register_32bit:inst1.IN_C[12]
+IN_C[13] => register_32bit:inst1.IN_C[13]
+IN_C[14] => register_32bit:inst1.IN_C[14]
+IN_C[15] => register_32bit:inst1.IN_C[15]
+IN_C[16] => register_32bit:inst1.IN_C[16]
+IN_C[17] => register_32bit:inst1.IN_C[17]
+IN_C[18] => register_32bit:inst1.IN_C[18]
+IN_C[19] => register_32bit:inst1.IN_C[19]
+IN_C[20] => register_32bit:inst1.IN_C[20]
+IN_C[21] => register_32bit:inst1.IN_C[21]
+IN_C[22] => register_32bit:inst1.IN_C[22]
+IN_C[23] => register_32bit:inst1.IN_C[23]
+IN_C[24] => register_32bit:inst1.IN_C[24]
+IN_C[25] => register_32bit:inst1.IN_C[25]
+IN_C[26] => register_32bit:inst1.IN_C[26]
+IN_C[27] => register_32bit:inst1.IN_C[27]
+IN_C[28] => register_32bit:inst1.IN_C[28]
+IN_C[29] => register_32bit:inst1.IN_C[29]
+IN_C[30] => register_32bit:inst1.IN_C[30]
+IN_C[31] => register_32bit:inst1.IN_C[31]
+
+
+|H|register_32bit:inst1
 OUTPUT[0] <= inst9[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst9[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst9[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -268,7 +373,7 @@ OUT_MEM_EN => inst10[1].OE
 OUT_MEM_EN => inst10[0].OE
 
 
-|register_32bit|register_4bit:inst
+|H|register_32bit:inst1|register_4bit:inst
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -285,7 +390,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst2
+|H|register_32bit:inst1|register_4bit:inst2
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -302,7 +407,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst4
+|H|register_32bit:inst1|register_4bit:inst4
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -319,7 +424,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst5
+|H|register_32bit:inst1|register_4bit:inst5
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -336,7 +441,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst6
+|H|register_32bit:inst1|register_4bit:inst6
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -353,7 +458,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst7
+|H|register_32bit:inst1|register_4bit:inst7
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -370,7 +475,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst8
+|H|register_32bit:inst1|register_4bit:inst8
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -387,7 +492,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|register_32bit|register_4bit:inst3
+|H|register_32bit:inst1|register_4bit:inst3
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>

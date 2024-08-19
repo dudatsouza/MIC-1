@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MIC1
-Sun Aug 18 20:55:21 2024
+Sun Aug 18 21:23:03 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,23 +16,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Propagation Delay
- 12. Minimum Propagation Delay
- 13. Fast Model Setup Summary
- 14. Fast Model Hold Summary
- 15. Fast Model Recovery Summary
- 16. Fast Model Removal Summary
- 17. Fast Model Minimum Pulse Width Summary
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Multicorner Timing Analysis Summary
- 21. Progagation Delay
- 22. Minimum Progagation Delay
- 23. Clock Transfers
- 24. Report TCCS
- 25. Report RSKM
- 26. Unconstrained Paths
- 27. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Datasheet Report
+ 12. Fast Model Setup Summary
+ 13. Fast Model Hold Summary
+ 14. Fast Model Recovery Summary
+ 15. Fast Model Removal Summary
+ 16. Fast Model Minimum Pulse Width Summary
+ 17. Fast Model Datasheet Report
+ 18. Multicorner Timing Analysis Summary
+ 19. Clock Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -121,148 +117,10 @@ No paths to report.
 No paths to report.
 
 
-+---------------------------------------------------------+
-; Propagation Delay                                       ;
-+------------+----------------+----+--------+--------+----+
-; Input Port ; Output Port    ; RR ; RF     ; FR     ; FF ;
-+------------+----------------+----+--------+--------+----+
-; OUT_EN     ; OUTPUT[0]      ;    ; 15.542 ; 15.542 ;    ;
-; OUT_EN     ; OUTPUT[1]      ;    ; 14.483 ; 14.483 ;    ;
-; OUT_EN     ; OUTPUT[2]      ;    ; 9.678  ; 9.678  ;    ;
-; OUT_EN     ; OUTPUT[3]      ;    ; 15.551 ; 15.551 ;    ;
-; OUT_EN     ; OUTPUT[4]      ;    ; 14.821 ; 14.821 ;    ;
-; OUT_EN     ; OUTPUT[5]      ;    ; 11.380 ; 11.380 ;    ;
-; OUT_EN     ; OUTPUT[6]      ;    ; 13.456 ; 13.456 ;    ;
-; OUT_EN     ; OUTPUT[7]      ;    ; 14.633 ; 14.633 ;    ;
-; OUT_EN     ; OUTPUT[8]      ;    ; 16.205 ; 16.205 ;    ;
-; OUT_EN     ; OUTPUT[9]      ;    ; 11.626 ; 11.626 ;    ;
-; OUT_EN     ; OUTPUT[10]     ;    ; 17.060 ; 17.060 ;    ;
-; OUT_EN     ; OUTPUT[11]     ;    ; 16.169 ; 16.169 ;    ;
-; OUT_EN     ; OUTPUT[12]     ;    ; 15.525 ; 15.525 ;    ;
-; OUT_EN     ; OUTPUT[13]     ;    ; 10.140 ; 10.140 ;    ;
-; OUT_EN     ; OUTPUT[14]     ;    ; 14.962 ; 14.962 ;    ;
-; OUT_EN     ; OUTPUT[15]     ;    ; 11.427 ; 11.427 ;    ;
-; OUT_EN     ; OUTPUT[16]     ;    ; 14.489 ; 14.489 ;    ;
-; OUT_EN     ; OUTPUT[17]     ;    ; 11.428 ; 11.428 ;    ;
-; OUT_EN     ; OUTPUT[18]     ;    ; 15.938 ; 15.938 ;    ;
-; OUT_EN     ; OUTPUT[19]     ;    ; 14.473 ; 14.473 ;    ;
-; OUT_EN     ; OUTPUT[20]     ;    ; 12.999 ; 12.999 ;    ;
-; OUT_EN     ; OUTPUT[21]     ;    ; 15.906 ; 15.906 ;    ;
-; OUT_EN     ; OUTPUT[22]     ;    ; 15.506 ; 15.506 ;    ;
-; OUT_EN     ; OUTPUT[23]     ;    ; 15.758 ; 15.758 ;    ;
-; OUT_EN     ; OUTPUT[24]     ;    ; 10.824 ; 10.824 ;    ;
-; OUT_EN     ; OUTPUT[25]     ;    ; 9.681  ; 9.681  ;    ;
-; OUT_EN     ; OUTPUT[26]     ;    ; 14.181 ; 14.181 ;    ;
-; OUT_EN     ; OUTPUT[27]     ;    ; 16.624 ; 16.624 ;    ;
-; OUT_EN     ; OUTPUT[28]     ;    ; 10.251 ; 10.251 ;    ;
-; OUT_EN     ; OUTPUT[29]     ;    ; 14.888 ; 14.888 ;    ;
-; OUT_EN     ; OUTPUT[30]     ;    ; 14.298 ; 14.298 ;    ;
-; OUT_EN     ; OUTPUT[31]     ;    ; 11.618 ; 11.618 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[0]  ;    ; 11.617 ; 11.617 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[1]  ;    ; 10.746 ; 10.746 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[2]  ;    ; 13.177 ; 13.177 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[3]  ;    ; 16.214 ; 16.214 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[4]  ;    ; 15.978 ; 15.978 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[5]  ;    ; 12.357 ; 12.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[6]  ;    ; 14.542 ; 14.542 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[7]  ;    ; 11.575 ; 11.575 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[8]  ;    ; 11.357 ; 11.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[9]  ;    ; 9.644  ; 9.644  ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[10] ;    ; 16.690 ; 16.690 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[11] ;    ; 10.067 ; 10.067 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[12] ;    ; 17.188 ; 17.188 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[13] ;    ; 17.123 ; 17.123 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[14] ;    ; 16.003 ; 16.003 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[15] ;    ; 13.461 ; 13.461 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[16] ;    ; 10.665 ; 10.665 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[17] ;    ; 17.290 ; 17.290 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[18] ;    ; 17.248 ; 17.248 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[19] ;    ; 14.437 ; 14.437 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[20] ;    ; 17.249 ; 17.249 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[21] ;    ; 12.357 ; 12.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[22] ;    ; 15.575 ; 15.575 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[23] ;    ; 17.287 ; 17.287 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[24] ;    ; 14.531 ; 14.531 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[25] ;    ; 15.231 ; 15.231 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[26] ;    ; 13.137 ; 13.137 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[27] ;    ; 16.586 ; 16.586 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[28] ;    ; 15.580 ; 15.580 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[29] ;    ; 15.115 ; 15.115 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[30] ;    ; 10.688 ; 10.688 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[31] ;    ; 9.664  ; 9.664  ;    ;
-+------------+----------------+----+--------+--------+----+
-
-
-+---------------------------------------------------------+
-; Minimum Propagation Delay                               ;
-+------------+----------------+----+--------+--------+----+
-; Input Port ; Output Port    ; RR ; RF     ; FR     ; FF ;
-+------------+----------------+----+--------+--------+----+
-; OUT_EN     ; OUTPUT[0]      ;    ; 15.542 ; 15.542 ;    ;
-; OUT_EN     ; OUTPUT[1]      ;    ; 14.483 ; 14.483 ;    ;
-; OUT_EN     ; OUTPUT[2]      ;    ; 9.678  ; 9.678  ;    ;
-; OUT_EN     ; OUTPUT[3]      ;    ; 15.551 ; 15.551 ;    ;
-; OUT_EN     ; OUTPUT[4]      ;    ; 14.821 ; 14.821 ;    ;
-; OUT_EN     ; OUTPUT[5]      ;    ; 11.380 ; 11.380 ;    ;
-; OUT_EN     ; OUTPUT[6]      ;    ; 13.456 ; 13.456 ;    ;
-; OUT_EN     ; OUTPUT[7]      ;    ; 14.633 ; 14.633 ;    ;
-; OUT_EN     ; OUTPUT[8]      ;    ; 16.205 ; 16.205 ;    ;
-; OUT_EN     ; OUTPUT[9]      ;    ; 11.626 ; 11.626 ;    ;
-; OUT_EN     ; OUTPUT[10]     ;    ; 17.060 ; 17.060 ;    ;
-; OUT_EN     ; OUTPUT[11]     ;    ; 16.169 ; 16.169 ;    ;
-; OUT_EN     ; OUTPUT[12]     ;    ; 15.525 ; 15.525 ;    ;
-; OUT_EN     ; OUTPUT[13]     ;    ; 10.140 ; 10.140 ;    ;
-; OUT_EN     ; OUTPUT[14]     ;    ; 14.962 ; 14.962 ;    ;
-; OUT_EN     ; OUTPUT[15]     ;    ; 11.427 ; 11.427 ;    ;
-; OUT_EN     ; OUTPUT[16]     ;    ; 14.489 ; 14.489 ;    ;
-; OUT_EN     ; OUTPUT[17]     ;    ; 11.428 ; 11.428 ;    ;
-; OUT_EN     ; OUTPUT[18]     ;    ; 15.938 ; 15.938 ;    ;
-; OUT_EN     ; OUTPUT[19]     ;    ; 14.473 ; 14.473 ;    ;
-; OUT_EN     ; OUTPUT[20]     ;    ; 12.999 ; 12.999 ;    ;
-; OUT_EN     ; OUTPUT[21]     ;    ; 15.906 ; 15.906 ;    ;
-; OUT_EN     ; OUTPUT[22]     ;    ; 15.506 ; 15.506 ;    ;
-; OUT_EN     ; OUTPUT[23]     ;    ; 15.758 ; 15.758 ;    ;
-; OUT_EN     ; OUTPUT[24]     ;    ; 10.824 ; 10.824 ;    ;
-; OUT_EN     ; OUTPUT[25]     ;    ; 9.681  ; 9.681  ;    ;
-; OUT_EN     ; OUTPUT[26]     ;    ; 14.181 ; 14.181 ;    ;
-; OUT_EN     ; OUTPUT[27]     ;    ; 16.624 ; 16.624 ;    ;
-; OUT_EN     ; OUTPUT[28]     ;    ; 10.251 ; 10.251 ;    ;
-; OUT_EN     ; OUTPUT[29]     ;    ; 14.888 ; 14.888 ;    ;
-; OUT_EN     ; OUTPUT[30]     ;    ; 14.298 ; 14.298 ;    ;
-; OUT_EN     ; OUTPUT[31]     ;    ; 11.618 ; 11.618 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[0]  ;    ; 11.617 ; 11.617 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[1]  ;    ; 10.746 ; 10.746 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[2]  ;    ; 13.177 ; 13.177 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[3]  ;    ; 16.214 ; 16.214 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[4]  ;    ; 15.978 ; 15.978 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[5]  ;    ; 12.357 ; 12.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[6]  ;    ; 14.542 ; 14.542 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[7]  ;    ; 11.575 ; 11.575 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[8]  ;    ; 11.357 ; 11.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[9]  ;    ; 9.644  ; 9.644  ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[10] ;    ; 16.690 ; 16.690 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[11] ;    ; 10.067 ; 10.067 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[12] ;    ; 17.188 ; 17.188 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[13] ;    ; 17.123 ; 17.123 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[14] ;    ; 16.003 ; 16.003 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[15] ;    ; 13.461 ; 13.461 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[16] ;    ; 10.665 ; 10.665 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[17] ;    ; 17.290 ; 17.290 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[18] ;    ; 17.248 ; 17.248 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[19] ;    ; 14.437 ; 14.437 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[20] ;    ; 17.249 ; 17.249 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[21] ;    ; 12.357 ; 12.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[22] ;    ; 15.575 ; 15.575 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[23] ;    ; 17.287 ; 17.287 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[24] ;    ; 14.531 ; 14.531 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[25] ;    ; 15.231 ; 15.231 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[26] ;    ; 13.137 ; 13.137 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[27] ;    ; 16.586 ; 16.586 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[28] ;    ; 15.580 ; 15.580 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[29] ;    ; 15.115 ; 15.115 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[30] ;    ; 10.688 ; 10.688 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[31] ;    ; 9.664  ; 9.664  ;    ;
-+------------+----------------+----+--------+--------+----+
+-------------------------------
+; Slow Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 ----------------------------
@@ -295,148 +153,10 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------------------+
-; Propagation Delay                                     ;
-+------------+----------------+----+-------+-------+----+
-; Input Port ; Output Port    ; RR ; RF    ; FR    ; FF ;
-+------------+----------------+----+-------+-------+----+
-; OUT_EN     ; OUTPUT[0]      ;    ; 6.834 ; 6.834 ;    ;
-; OUT_EN     ; OUTPUT[1]      ;    ; 6.473 ; 6.473 ;    ;
-; OUT_EN     ; OUTPUT[2]      ;    ; 4.541 ; 4.541 ;    ;
-; OUT_EN     ; OUTPUT[3]      ;    ; 6.838 ; 6.838 ;    ;
-; OUT_EN     ; OUTPUT[4]      ;    ; 6.528 ; 6.528 ;    ;
-; OUT_EN     ; OUTPUT[5]      ;    ; 5.202 ; 5.202 ;    ;
-; OUT_EN     ; OUTPUT[6]      ;    ; 5.983 ; 5.983 ;    ;
-; OUT_EN     ; OUTPUT[7]      ;    ; 6.470 ; 6.470 ;    ;
-; OUT_EN     ; OUTPUT[8]      ;    ; 7.044 ; 7.044 ;    ;
-; OUT_EN     ; OUTPUT[9]      ;    ; 5.272 ; 5.272 ;    ;
-; OUT_EN     ; OUTPUT[10]     ;    ; 7.328 ; 7.328 ;    ;
-; OUT_EN     ; OUTPUT[11]     ;    ; 7.070 ; 7.070 ;    ;
-; OUT_EN     ; OUTPUT[12]     ;    ; 6.819 ; 6.819 ;    ;
-; OUT_EN     ; OUTPUT[13]     ;    ; 4.743 ; 4.743 ;    ;
-; OUT_EN     ; OUTPUT[14]     ;    ; 6.554 ; 6.554 ;    ;
-; OUT_EN     ; OUTPUT[15]     ;    ; 5.240 ; 5.240 ;    ;
-; OUT_EN     ; OUTPUT[16]     ;    ; 6.479 ; 6.479 ;    ;
-; OUT_EN     ; OUTPUT[17]     ;    ; 5.240 ; 5.240 ;    ;
-; OUT_EN     ; OUTPUT[18]     ;    ; 7.003 ; 7.003 ;    ;
-; OUT_EN     ; OUTPUT[19]     ;    ; 6.454 ; 6.454 ;    ;
-; OUT_EN     ; OUTPUT[20]     ;    ; 5.815 ; 5.815 ;    ;
-; OUT_EN     ; OUTPUT[21]     ;    ; 6.956 ; 6.956 ;    ;
-; OUT_EN     ; OUTPUT[22]     ;    ; 6.797 ; 6.797 ;    ;
-; OUT_EN     ; OUTPUT[23]     ;    ; 6.887 ; 6.887 ;    ;
-; OUT_EN     ; OUTPUT[24]     ;    ; 5.025 ; 5.025 ;    ;
-; OUT_EN     ; OUTPUT[25]     ;    ; 4.548 ; 4.548 ;    ;
-; OUT_EN     ; OUTPUT[26]     ;    ; 6.291 ; 6.291 ;    ;
-; OUT_EN     ; OUTPUT[27]     ;    ; 7.178 ; 7.178 ;    ;
-; OUT_EN     ; OUTPUT[28]     ;    ; 4.776 ; 4.776 ;    ;
-; OUT_EN     ; OUTPUT[29]     ;    ; 6.586 ; 6.586 ;    ;
-; OUT_EN     ; OUTPUT[30]     ;    ; 6.388 ; 6.388 ;    ;
-; OUT_EN     ; OUTPUT[31]     ;    ; 5.274 ; 5.274 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[0]  ;    ; 5.291 ; 5.291 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[1]  ;    ; 5.007 ; 5.007 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[2]  ;    ; 5.990 ; 5.990 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[3]  ;    ; 7.064 ; 7.064 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[4]  ;    ; 6.954 ; 6.954 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[5]  ;    ; 5.609 ; 5.609 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[6]  ;    ; 6.527 ; 6.527 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[7]  ;    ; 5.262 ; 5.262 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[8]  ;    ; 5.216 ; 5.216 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[9]  ;    ; 4.541 ; 4.541 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[10] ;    ; 7.245 ; 7.245 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[11] ;    ; 4.723 ; 4.723 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[12] ;    ; 7.452 ; 7.452 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[13] ;    ; 7.390 ; 7.390 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[14] ;    ; 6.978 ; 6.978 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[15] ;    ; 5.987 ; 5.987 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[16] ;    ; 4.936 ; 4.936 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[17] ;    ; 7.584 ; 7.584 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[18] ;    ; 7.550 ; 7.550 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[19] ;    ; 6.437 ; 6.437 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[20] ;    ; 7.551 ; 7.551 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[21] ;    ; 5.609 ; 5.609 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[22] ;    ; 6.838 ; 6.838 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[23] ;    ; 7.584 ; 7.584 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[24] ;    ; 6.518 ; 6.518 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[25] ;    ; 6.654 ; 6.654 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[26] ;    ; 5.950 ; 5.950 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[27] ;    ; 7.312 ; 7.312 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[28] ;    ; 6.843 ; 6.843 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[29] ;    ; 6.674 ; 6.674 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[30] ;    ; 4.955 ; 4.955 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[31] ;    ; 4.561 ; 4.561 ;    ;
-+------------+----------------+----+-------+-------+----+
-
-
-+-------------------------------------------------------+
-; Minimum Propagation Delay                             ;
-+------------+----------------+----+-------+-------+----+
-; Input Port ; Output Port    ; RR ; RF    ; FR    ; FF ;
-+------------+----------------+----+-------+-------+----+
-; OUT_EN     ; OUTPUT[0]      ;    ; 6.834 ; 6.834 ;    ;
-; OUT_EN     ; OUTPUT[1]      ;    ; 6.473 ; 6.473 ;    ;
-; OUT_EN     ; OUTPUT[2]      ;    ; 4.541 ; 4.541 ;    ;
-; OUT_EN     ; OUTPUT[3]      ;    ; 6.838 ; 6.838 ;    ;
-; OUT_EN     ; OUTPUT[4]      ;    ; 6.528 ; 6.528 ;    ;
-; OUT_EN     ; OUTPUT[5]      ;    ; 5.202 ; 5.202 ;    ;
-; OUT_EN     ; OUTPUT[6]      ;    ; 5.983 ; 5.983 ;    ;
-; OUT_EN     ; OUTPUT[7]      ;    ; 6.470 ; 6.470 ;    ;
-; OUT_EN     ; OUTPUT[8]      ;    ; 7.044 ; 7.044 ;    ;
-; OUT_EN     ; OUTPUT[9]      ;    ; 5.272 ; 5.272 ;    ;
-; OUT_EN     ; OUTPUT[10]     ;    ; 7.328 ; 7.328 ;    ;
-; OUT_EN     ; OUTPUT[11]     ;    ; 7.070 ; 7.070 ;    ;
-; OUT_EN     ; OUTPUT[12]     ;    ; 6.819 ; 6.819 ;    ;
-; OUT_EN     ; OUTPUT[13]     ;    ; 4.743 ; 4.743 ;    ;
-; OUT_EN     ; OUTPUT[14]     ;    ; 6.554 ; 6.554 ;    ;
-; OUT_EN     ; OUTPUT[15]     ;    ; 5.240 ; 5.240 ;    ;
-; OUT_EN     ; OUTPUT[16]     ;    ; 6.479 ; 6.479 ;    ;
-; OUT_EN     ; OUTPUT[17]     ;    ; 5.240 ; 5.240 ;    ;
-; OUT_EN     ; OUTPUT[18]     ;    ; 7.003 ; 7.003 ;    ;
-; OUT_EN     ; OUTPUT[19]     ;    ; 6.454 ; 6.454 ;    ;
-; OUT_EN     ; OUTPUT[20]     ;    ; 5.815 ; 5.815 ;    ;
-; OUT_EN     ; OUTPUT[21]     ;    ; 6.956 ; 6.956 ;    ;
-; OUT_EN     ; OUTPUT[22]     ;    ; 6.797 ; 6.797 ;    ;
-; OUT_EN     ; OUTPUT[23]     ;    ; 6.887 ; 6.887 ;    ;
-; OUT_EN     ; OUTPUT[24]     ;    ; 5.025 ; 5.025 ;    ;
-; OUT_EN     ; OUTPUT[25]     ;    ; 4.548 ; 4.548 ;    ;
-; OUT_EN     ; OUTPUT[26]     ;    ; 6.291 ; 6.291 ;    ;
-; OUT_EN     ; OUTPUT[27]     ;    ; 7.178 ; 7.178 ;    ;
-; OUT_EN     ; OUTPUT[28]     ;    ; 4.776 ; 4.776 ;    ;
-; OUT_EN     ; OUTPUT[29]     ;    ; 6.586 ; 6.586 ;    ;
-; OUT_EN     ; OUTPUT[30]     ;    ; 6.388 ; 6.388 ;    ;
-; OUT_EN     ; OUTPUT[31]     ;    ; 5.274 ; 5.274 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[0]  ;    ; 5.291 ; 5.291 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[1]  ;    ; 5.007 ; 5.007 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[2]  ;    ; 5.990 ; 5.990 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[3]  ;    ; 7.064 ; 7.064 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[4]  ;    ; 6.954 ; 6.954 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[5]  ;    ; 5.609 ; 5.609 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[6]  ;    ; 6.527 ; 6.527 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[7]  ;    ; 5.262 ; 5.262 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[8]  ;    ; 5.216 ; 5.216 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[9]  ;    ; 4.541 ; 4.541 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[10] ;    ; 7.245 ; 7.245 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[11] ;    ; 4.723 ; 4.723 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[12] ;    ; 7.452 ; 7.452 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[13] ;    ; 7.390 ; 7.390 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[14] ;    ; 6.978 ; 6.978 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[15] ;    ; 5.987 ; 5.987 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[16] ;    ; 4.936 ; 4.936 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[17] ;    ; 7.584 ; 7.584 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[18] ;    ; 7.550 ; 7.550 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[19] ;    ; 6.437 ; 6.437 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[20] ;    ; 7.551 ; 7.551 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[21] ;    ; 5.609 ; 5.609 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[22] ;    ; 6.838 ; 6.838 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[23] ;    ; 7.584 ; 7.584 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[24] ;    ; 6.518 ; 6.518 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[25] ;    ; 6.654 ; 6.654 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[26] ;    ; 5.950 ; 5.950 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[27] ;    ; 7.312 ; 7.312 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[28] ;    ; 6.843 ; 6.843 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[29] ;    ; 6.674 ; 6.674 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[30] ;    ; 4.955 ; 4.955 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[31] ;    ; 4.561 ; 4.561 ;    ;
-+------------+----------------+----+-------+-------+----+
+-------------------------------
+; Fast Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 +----------------------------------------------------------------------------+
@@ -447,150 +167,6 @@ No paths to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
-
-
-+---------------------------------------------------------+
-; Progagation Delay                                       ;
-+------------+----------------+----+--------+--------+----+
-; Input Port ; Output Port    ; RR ; RF     ; FR     ; FF ;
-+------------+----------------+----+--------+--------+----+
-; OUT_EN     ; OUTPUT[0]      ;    ; 15.542 ; 15.542 ;    ;
-; OUT_EN     ; OUTPUT[1]      ;    ; 14.483 ; 14.483 ;    ;
-; OUT_EN     ; OUTPUT[2]      ;    ; 9.678  ; 9.678  ;    ;
-; OUT_EN     ; OUTPUT[3]      ;    ; 15.551 ; 15.551 ;    ;
-; OUT_EN     ; OUTPUT[4]      ;    ; 14.821 ; 14.821 ;    ;
-; OUT_EN     ; OUTPUT[5]      ;    ; 11.380 ; 11.380 ;    ;
-; OUT_EN     ; OUTPUT[6]      ;    ; 13.456 ; 13.456 ;    ;
-; OUT_EN     ; OUTPUT[7]      ;    ; 14.633 ; 14.633 ;    ;
-; OUT_EN     ; OUTPUT[8]      ;    ; 16.205 ; 16.205 ;    ;
-; OUT_EN     ; OUTPUT[9]      ;    ; 11.626 ; 11.626 ;    ;
-; OUT_EN     ; OUTPUT[10]     ;    ; 17.060 ; 17.060 ;    ;
-; OUT_EN     ; OUTPUT[11]     ;    ; 16.169 ; 16.169 ;    ;
-; OUT_EN     ; OUTPUT[12]     ;    ; 15.525 ; 15.525 ;    ;
-; OUT_EN     ; OUTPUT[13]     ;    ; 10.140 ; 10.140 ;    ;
-; OUT_EN     ; OUTPUT[14]     ;    ; 14.962 ; 14.962 ;    ;
-; OUT_EN     ; OUTPUT[15]     ;    ; 11.427 ; 11.427 ;    ;
-; OUT_EN     ; OUTPUT[16]     ;    ; 14.489 ; 14.489 ;    ;
-; OUT_EN     ; OUTPUT[17]     ;    ; 11.428 ; 11.428 ;    ;
-; OUT_EN     ; OUTPUT[18]     ;    ; 15.938 ; 15.938 ;    ;
-; OUT_EN     ; OUTPUT[19]     ;    ; 14.473 ; 14.473 ;    ;
-; OUT_EN     ; OUTPUT[20]     ;    ; 12.999 ; 12.999 ;    ;
-; OUT_EN     ; OUTPUT[21]     ;    ; 15.906 ; 15.906 ;    ;
-; OUT_EN     ; OUTPUT[22]     ;    ; 15.506 ; 15.506 ;    ;
-; OUT_EN     ; OUTPUT[23]     ;    ; 15.758 ; 15.758 ;    ;
-; OUT_EN     ; OUTPUT[24]     ;    ; 10.824 ; 10.824 ;    ;
-; OUT_EN     ; OUTPUT[25]     ;    ; 9.681  ; 9.681  ;    ;
-; OUT_EN     ; OUTPUT[26]     ;    ; 14.181 ; 14.181 ;    ;
-; OUT_EN     ; OUTPUT[27]     ;    ; 16.624 ; 16.624 ;    ;
-; OUT_EN     ; OUTPUT[28]     ;    ; 10.251 ; 10.251 ;    ;
-; OUT_EN     ; OUTPUT[29]     ;    ; 14.888 ; 14.888 ;    ;
-; OUT_EN     ; OUTPUT[30]     ;    ; 14.298 ; 14.298 ;    ;
-; OUT_EN     ; OUTPUT[31]     ;    ; 11.618 ; 11.618 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[0]  ;    ; 11.617 ; 11.617 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[1]  ;    ; 10.746 ; 10.746 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[2]  ;    ; 13.177 ; 13.177 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[3]  ;    ; 16.214 ; 16.214 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[4]  ;    ; 15.978 ; 15.978 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[5]  ;    ; 12.357 ; 12.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[6]  ;    ; 14.542 ; 14.542 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[7]  ;    ; 11.575 ; 11.575 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[8]  ;    ; 11.357 ; 11.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[9]  ;    ; 9.644  ; 9.644  ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[10] ;    ; 16.690 ; 16.690 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[11] ;    ; 10.067 ; 10.067 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[12] ;    ; 17.188 ; 17.188 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[13] ;    ; 17.123 ; 17.123 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[14] ;    ; 16.003 ; 16.003 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[15] ;    ; 13.461 ; 13.461 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[16] ;    ; 10.665 ; 10.665 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[17] ;    ; 17.290 ; 17.290 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[18] ;    ; 17.248 ; 17.248 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[19] ;    ; 14.437 ; 14.437 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[20] ;    ; 17.249 ; 17.249 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[21] ;    ; 12.357 ; 12.357 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[22] ;    ; 15.575 ; 15.575 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[23] ;    ; 17.287 ; 17.287 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[24] ;    ; 14.531 ; 14.531 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[25] ;    ; 15.231 ; 15.231 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[26] ;    ; 13.137 ; 13.137 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[27] ;    ; 16.586 ; 16.586 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[28] ;    ; 15.580 ; 15.580 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[29] ;    ; 15.115 ; 15.115 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[30] ;    ; 10.688 ; 10.688 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[31] ;    ; 9.664  ; 9.664  ;    ;
-+------------+----------------+----+--------+--------+----+
-
-
-+-------------------------------------------------------+
-; Minimum Progagation Delay                             ;
-+------------+----------------+----+-------+-------+----+
-; Input Port ; Output Port    ; RR ; RF    ; FR    ; FF ;
-+------------+----------------+----+-------+-------+----+
-; OUT_EN     ; OUTPUT[0]      ;    ; 6.834 ; 6.834 ;    ;
-; OUT_EN     ; OUTPUT[1]      ;    ; 6.473 ; 6.473 ;    ;
-; OUT_EN     ; OUTPUT[2]      ;    ; 4.541 ; 4.541 ;    ;
-; OUT_EN     ; OUTPUT[3]      ;    ; 6.838 ; 6.838 ;    ;
-; OUT_EN     ; OUTPUT[4]      ;    ; 6.528 ; 6.528 ;    ;
-; OUT_EN     ; OUTPUT[5]      ;    ; 5.202 ; 5.202 ;    ;
-; OUT_EN     ; OUTPUT[6]      ;    ; 5.983 ; 5.983 ;    ;
-; OUT_EN     ; OUTPUT[7]      ;    ; 6.470 ; 6.470 ;    ;
-; OUT_EN     ; OUTPUT[8]      ;    ; 7.044 ; 7.044 ;    ;
-; OUT_EN     ; OUTPUT[9]      ;    ; 5.272 ; 5.272 ;    ;
-; OUT_EN     ; OUTPUT[10]     ;    ; 7.328 ; 7.328 ;    ;
-; OUT_EN     ; OUTPUT[11]     ;    ; 7.070 ; 7.070 ;    ;
-; OUT_EN     ; OUTPUT[12]     ;    ; 6.819 ; 6.819 ;    ;
-; OUT_EN     ; OUTPUT[13]     ;    ; 4.743 ; 4.743 ;    ;
-; OUT_EN     ; OUTPUT[14]     ;    ; 6.554 ; 6.554 ;    ;
-; OUT_EN     ; OUTPUT[15]     ;    ; 5.240 ; 5.240 ;    ;
-; OUT_EN     ; OUTPUT[16]     ;    ; 6.479 ; 6.479 ;    ;
-; OUT_EN     ; OUTPUT[17]     ;    ; 5.240 ; 5.240 ;    ;
-; OUT_EN     ; OUTPUT[18]     ;    ; 7.003 ; 7.003 ;    ;
-; OUT_EN     ; OUTPUT[19]     ;    ; 6.454 ; 6.454 ;    ;
-; OUT_EN     ; OUTPUT[20]     ;    ; 5.815 ; 5.815 ;    ;
-; OUT_EN     ; OUTPUT[21]     ;    ; 6.956 ; 6.956 ;    ;
-; OUT_EN     ; OUTPUT[22]     ;    ; 6.797 ; 6.797 ;    ;
-; OUT_EN     ; OUTPUT[23]     ;    ; 6.887 ; 6.887 ;    ;
-; OUT_EN     ; OUTPUT[24]     ;    ; 5.025 ; 5.025 ;    ;
-; OUT_EN     ; OUTPUT[25]     ;    ; 4.548 ; 4.548 ;    ;
-; OUT_EN     ; OUTPUT[26]     ;    ; 6.291 ; 6.291 ;    ;
-; OUT_EN     ; OUTPUT[27]     ;    ; 7.178 ; 7.178 ;    ;
-; OUT_EN     ; OUTPUT[28]     ;    ; 4.776 ; 4.776 ;    ;
-; OUT_EN     ; OUTPUT[29]     ;    ; 6.586 ; 6.586 ;    ;
-; OUT_EN     ; OUTPUT[30]     ;    ; 6.388 ; 6.388 ;    ;
-; OUT_EN     ; OUTPUT[31]     ;    ; 5.274 ; 5.274 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[0]  ;    ; 5.291 ; 5.291 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[1]  ;    ; 5.007 ; 5.007 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[2]  ;    ; 5.990 ; 5.990 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[3]  ;    ; 7.064 ; 7.064 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[4]  ;    ; 6.954 ; 6.954 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[5]  ;    ; 5.609 ; 5.609 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[6]  ;    ; 6.527 ; 6.527 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[7]  ;    ; 5.262 ; 5.262 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[8]  ;    ; 5.216 ; 5.216 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[9]  ;    ; 4.541 ; 4.541 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[10] ;    ; 7.245 ; 7.245 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[11] ;    ; 4.723 ; 4.723 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[12] ;    ; 7.452 ; 7.452 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[13] ;    ; 7.390 ; 7.390 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[14] ;    ; 6.978 ; 6.978 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[15] ;    ; 5.987 ; 5.987 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[16] ;    ; 4.936 ; 4.936 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[17] ;    ; 7.584 ; 7.584 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[18] ;    ; 7.550 ; 7.550 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[19] ;    ; 6.437 ; 6.437 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[20] ;    ; 7.551 ; 7.551 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[21] ;    ; 5.609 ; 5.609 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[22] ;    ; 6.838 ; 6.838 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[23] ;    ; 7.584 ; 7.584 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[24] ;    ; 6.518 ; 6.518 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[25] ;    ; 6.654 ; 6.654 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[26] ;    ; 5.950 ; 5.950 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[27] ;    ; 7.312 ; 7.312 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[28] ;    ; 6.843 ; 6.843 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[29] ;    ; 6.674 ; 6.674 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[30] ;    ; 4.955 ; 4.955 ;    ;
-; OUT_MEM_EN ; OUTPUT_MEM[31] ;    ; 4.561 ; 4.561 ;    ;
-+------------+----------------+----+-------+-------+----+
 
 
 -------------------
@@ -618,10 +194,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 64    ; 64   ;
-; Unconstrained Output Ports      ; 64    ; 64   ;
-; Unconstrained Output Port Paths ; 64    ; 64   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -631,7 +207,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Aug 18 20:55:20 2024
+    Info: Processing started: Sun Aug 18 21:23:03 2024
 Info: Command: quartus_sta MIC1 -c MIC1
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -661,12 +237,12 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4546 megabytes
-    Info: Processing ended: Sun Aug 18 20:55:21 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sun Aug 18 21:23:03 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
