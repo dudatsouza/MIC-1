@@ -1,4 +1,4 @@
-|LV
+|SP
 OUT_B[0] <= register_32bit:inst6.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst6.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst6.OUTPUT[2]
@@ -32,9 +32,9 @@ OUT_B[29] <= register_32bit:inst6.OUTPUT[29]
 OUT_B[30] <= register_32bit:inst6.OUTPUT[30]
 OUT_B[31] <= register_32bit:inst6.OUTPUT[31]
 LOAD => register_32bit:inst6.LOAD
-MIR[0] => inst8.IN0
+MIR[0] => inst8.IN1
 MIR[1] => inst9.IN1
-MIR[2] => inst8.IN1
+MIR[2] => inst8.IN0
 MIR[3] => inst9.IN0
 MIR[4] => ~NO_FANOUT~
 MIR[5] => ~NO_FANOUT~
@@ -42,8 +42,8 @@ MIR[6] => ~NO_FANOUT~
 MIR[7] => ~NO_FANOUT~
 MIR[8] => ~NO_FANOUT~
 MIR[9] => ~NO_FANOUT~
-MIR[10] => ~NO_FANOUT~
-MIR[11] => register_32bit:inst6.WRITE_EN
+MIR[10] => register_32bit:inst6.WRITE_EN
+MIR[11] => ~NO_FANOUT~
 MIR[12] => ~NO_FANOUT~
 MIR[13] => ~NO_FANOUT~
 MIR[14] => ~NO_FANOUT~
@@ -103,7 +103,7 @@ IN_C[30] => register_32bit:inst6.IN_C[30]
 IN_C[31] => register_32bit:inst6.IN_C[31]
 
 
-|LV|register_32bit:inst6
+|SP|register_32bit:inst6
 OUTPUT[0] <= inst9[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst9[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst9[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -373,7 +373,7 @@ OUT_MEM_EN => inst10[1].OE
 OUT_MEM_EN => inst10[0].OE
 
 
-|LV|register_32bit:inst6|register_4bit:inst
+|SP|register_32bit:inst6|register_4bit:inst
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -390,7 +390,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst2
+|SP|register_32bit:inst6|register_4bit:inst2
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -407,7 +407,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst4
+|SP|register_32bit:inst6|register_4bit:inst4
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -424,7 +424,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst5
+|SP|register_32bit:inst6|register_4bit:inst5
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -441,7 +441,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst6
+|SP|register_32bit:inst6|register_4bit:inst6
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -458,7 +458,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst7
+|SP|register_32bit:inst6|register_4bit:inst7
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -475,7 +475,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst8
+|SP|register_32bit:inst6|register_4bit:inst8
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -492,7 +492,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|register_32bit:inst6|register_4bit:inst3
+|SP|register_32bit:inst6|register_4bit:inst3
 OUTPUT[0] <= <GND>
 OUTPUT[1] <= <GND>
 OUTPUT[2] <= <GND>
@@ -509,7 +509,7 @@ PARALLEL[2] => ~NO_FANOUT~
 PARALLEL[3] => ~NO_FANOUT~
 
 
-|LV|LV_initial_address:inst
+|SP|LV_initial_address:inst
 LV_INIT[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
