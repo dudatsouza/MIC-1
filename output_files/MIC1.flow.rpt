@@ -1,5 +1,5 @@
 Flow report for MIC1
-Mon Aug 19 07:53:42 2024
+Mon Aug 19 09:28:37 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Aug 19 07:53:42 2024           ;
+; Flow Status                        ; Successful - Mon Aug 19 09:28:37 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; SP                                              ;
+; Top-level Entity Name              ; MBR                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C70F896I8                                    ;
 ; Timing Models                      ; Final                                           ;
@@ -51,7 +51,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 1 / 68,416 ( < 1 % )                            ;
 ;     Dedicated logic registers      ; 0 / 68,416 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 102 / 622 ( 16 % )                              ;
+; Total pins                         ; 86 / 622 ( 14 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 1,152,000 ( 0 % )                           ;
 ; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                                 ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/19/2024 07:53:25 ;
+; Start date & time ; 08/19/2024 09:28:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIC1                ;
 +-------------------+---------------------+
@@ -75,18 +75,18 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 97226908169579.172406480520812 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 97226908169579.172407050026824 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                           ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 125                            ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; -40                            ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                       ; --            ; SP          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; SP          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; SP          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; MBR         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; MBR         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; MBR         ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; SP                             ; MIC1          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; MBR                            ; MIC1          ; --          ; --             ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
@@ -96,11 +96,11 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4592 MB             ; 00:00:00                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 4979 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4565 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 4986 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4565 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4547 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4512 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:05                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

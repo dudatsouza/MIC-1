@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Mon Aug 19 07:53:26 2024
+Mon Aug 19 09:28:21 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 19 07:53:26 2024           ;
+; Analysis & Synthesis Status        ; Successful - Mon Aug 19 09:28:21 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; SP                                              ;
+; Top-level Entity Name              ; MBR                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; 1                                               ;
 ;     Total combinational functions  ; 1                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 102                                             ;
+; Total pins                         ; 86                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C70F896I8       ;                    ;
-; Top-level entity name                                                      ; SP                 ; MIC1               ;
+; Top-level entity name                                                      ; MBR                ; MIC1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,16 +154,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_4bit.bdf      ;         ;
-; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_32bit.bdf     ;         ;
-; LV_initial_address.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/LV_initial_address.bdf ;         ;
-; SP.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/SP.bdf                 ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_4bit.bdf  ;         ;
+; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_32bit.bdf ;         ;
+; mbr_extensor.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/mbr_extensor.bdf   ;         ;
+; MBR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/MBR.bdf            ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -187,12 +187,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0       ;
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
-; I/O pins                                    ; 102     ;
+; I/O pins                                    ; 86      ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ; Maximum fan-out node                        ; inst8~0 ;
 ; Maximum fan-out                             ; 32      ;
 ; Total fan-out                               ; 36      ;
-; Average fan-out                             ; 0.35    ;
+; Average fan-out                             ; 0.41    ;
 +---------------------------------------------+---------+
 
 
@@ -201,7 +201,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |SP                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 102  ; 0            ; |SP                 ; work         ;
+; |MBR                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |MBR                ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -236,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Aug 19 07:53:25 2024
+    Info: Processing started: Mon Aug 19 09:28:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder2_4.bdf
@@ -275,7 +275,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file lv.bdf
     Info (12023): Found entity 1: LV
 Info (12021): Found 1 design units, including 1 entities, in source file sp.bdf
     Info (12023): Found entity 1: SP
-Info (12127): Elaborating entity "SP" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file mbr_extensor.bdf
+    Info (12023): Found entity 1: mbr_extensor
+Info (12021): Found 1 design units, including 1 entities, in source file mbr.bdf
+    Info (12023): Found entity 1: MBR
+Info (12127): Elaborating entity "MBR" for the top level hierarchy
 Info (12128): Elaborating entity "register_32bit" for hierarchy "register_32bit:inst6"
 Info (12128): Elaborating entity "register_4bit" for hierarchy "register_32bit:inst6|register_4bit:inst"
 Warning (275043): Pin "OUTPUT[3..0]" is missing source
@@ -300,11 +304,30 @@ Warning (275008): Primitive "NAND2" of instance "inst6" not used
 Warning (275008): Primitive "NAND2" of instance "inst7" not used
 Warning (275008): Primitive "NAND2" of instance "inst8" not used
 Warning (275008): Primitive "NAND2" of instance "inst9" not used
-Info (12128): Elaborating entity "LV_initial_address" for hierarchy "LV_initial_address:inst"
+Info (12128): Elaborating entity "mbr_extensor" for hierarchy "mbr_extensor:inst19"
+Warning (13030): Reduced the following open-drain buffers that are fed by GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[7]" to the output pin "OUT_MBR[7]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[6]" to the output pin "OUT_MBR[6]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[5]" to the output pin "OUT_MBR[5]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[4]" to the output pin "OUT_MBR[4]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[3]" to the output pin "OUT_MBR[3]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[2]" to the output pin "OUT_MBR[2]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[1]" to the output pin "OUT_MBR[1]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst7|inst10[0]" to the output pin "OUT_MBR[0]" to GND
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "OUT_MBR[7]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[6]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[5]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[4]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[3]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[2]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[1]" is stuck at GND
+    Warning (13410): Pin "OUT_MBR[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 66 input pin(s) that do not drive logic
+Warning (21074): Design contains 42 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "LOAD"
+    Warning (15610): No output dependent on input pin "CLOCK"
     Warning (15610): No output dependent on input pin "MIR[35]"
     Warning (15610): No output dependent on input pin "MIR[34]"
     Warning (15610): No output dependent on input pin "MIR[33]"
@@ -337,47 +360,22 @@ Warning (21074): Design contains 66 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MIR[6]"
     Warning (15610): No output dependent on input pin "MIR[5]"
     Warning (15610): No output dependent on input pin "MIR[4]"
-    Warning (15610): No output dependent on input pin "CLOCK"
-    Warning (15610): No output dependent on input pin "IN_C[31]"
-    Warning (15610): No output dependent on input pin "IN_C[30]"
-    Warning (15610): No output dependent on input pin "IN_C[29]"
-    Warning (15610): No output dependent on input pin "IN_C[28]"
-    Warning (15610): No output dependent on input pin "IN_C[27]"
-    Warning (15610): No output dependent on input pin "IN_C[26]"
-    Warning (15610): No output dependent on input pin "IN_C[25]"
-    Warning (15610): No output dependent on input pin "IN_C[24]"
-    Warning (15610): No output dependent on input pin "IN_C[23]"
-    Warning (15610): No output dependent on input pin "IN_C[22]"
-    Warning (15610): No output dependent on input pin "IN_C[21]"
-    Warning (15610): No output dependent on input pin "IN_C[20]"
-    Warning (15610): No output dependent on input pin "IN_C[19]"
-    Warning (15610): No output dependent on input pin "IN_C[18]"
-    Warning (15610): No output dependent on input pin "IN_C[17]"
-    Warning (15610): No output dependent on input pin "IN_C[16]"
-    Warning (15610): No output dependent on input pin "IN_C[15]"
-    Warning (15610): No output dependent on input pin "IN_C[14]"
-    Warning (15610): No output dependent on input pin "IN_C[13]"
-    Warning (15610): No output dependent on input pin "IN_C[12]"
-    Warning (15610): No output dependent on input pin "IN_C[11]"
-    Warning (15610): No output dependent on input pin "IN_C[10]"
-    Warning (15610): No output dependent on input pin "IN_C[9]"
-    Warning (15610): No output dependent on input pin "IN_C[8]"
-    Warning (15610): No output dependent on input pin "IN_C[7]"
-    Warning (15610): No output dependent on input pin "IN_C[6]"
-    Warning (15610): No output dependent on input pin "IN_C[5]"
-    Warning (15610): No output dependent on input pin "IN_C[4]"
-    Warning (15610): No output dependent on input pin "IN_C[3]"
-    Warning (15610): No output dependent on input pin "IN_C[2]"
-    Warning (15610): No output dependent on input pin "IN_C[1]"
-    Warning (15610): No output dependent on input pin "IN_C[0]"
-Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 70 input pins
-    Info (21059): Implemented 32 output pins
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[7]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[6]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[5]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[4]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[3]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[2]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[1]"
+    Warning (15610): No output dependent on input pin "PROGRAM_BYTE[0]"
+Info (21057): Implemented 87 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 46 input pins
+    Info (21059): Implemented 40 output pins
     Info (21061): Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 90 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 84 warnings
     Info: Peak virtual memory: 4602 megabytes
-    Info: Processing ended: Mon Aug 19 07:53:26 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Aug 19 09:28:21 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
 
 
