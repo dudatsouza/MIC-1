@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Mon Aug 19 09:49:51 2024
+Mon Aug 19 10:16:44 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 19 09:49:51 2024           ;
+; Analysis & Synthesis Status        ; Successful - Mon Aug 19 10:16:44 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; MAR                                             ;
+; Top-level Entity Name              ; bank_regs                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
+; Total logic elements               ; 1                                               ;
+;     Total combinational functions  ; 1                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 102                                             ;
+; Total pins                         ; 278                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C70F896I8       ;                    ;
-; Top-level entity name                                                      ; MAR                ; MIC1               ;
+; Top-level entity name                                                      ; bank_regs          ; MIC1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,49 +154,69 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                        ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
-; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_4bit.bdf  ;         ;
-; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_32bit.bdf ;         ;
-; MAR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/MAR.bdf            ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_4bit.bdf       ;         ;
+; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/register_32bit.bdf      ;         ;
+; H.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/H.bdf                   ;         ;
+; OPC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/OPC.bdf                 ;         ;
+; TOS.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/TOS.bdf                 ;         ;
+; CPP.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/CPP.bdf                 ;         ;
+; CPP_initial_address.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/CPP_initial_address.bdf ;         ;
+; LV_initial_address.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/LV_initial_address.bdf  ;         ;
+; LV.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/LV.bdf                  ;         ;
+; SP.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/SP.bdf                  ;         ;
+; mbr_extensor.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/mbr_extensor.bdf        ;         ;
+; MBR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/MBR.bdf                 ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/PC.bdf                  ;         ;
+; MDR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/MDR.bdf                 ;         ;
+; MAR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/MAR.bdf                 ;         ;
+; bank_regs.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/bank_regs.bdf           ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 102   ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
++-------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                               ;
++---------------------------------------------+---------------------------------------------+
+; Resource                                    ; Usage                                       ;
++---------------------------------------------+---------------------------------------------+
+; Estimated Total logic elements              ; 1                                           ;
+;                                             ;                                             ;
+; Total combinational functions               ; 1                                           ;
+; Logic element usage by number of LUT inputs ;                                             ;
+;     -- 4 input functions                    ; 1                                           ;
+;     -- 3 input functions                    ; 0                                           ;
+;     -- <=2 input functions                  ; 0                                           ;
+;                                             ;                                             ;
+; Logic elements by mode                      ;                                             ;
+;     -- normal mode                          ; 1                                           ;
+;     -- arithmetic mode                      ; 0                                           ;
+;                                             ;                                             ;
+; Total registers                             ; 0                                           ;
+;     -- Dedicated logic registers            ; 0                                           ;
+;     -- I/O registers                        ; 0                                           ;
+;                                             ;                                             ;
+; I/O pins                                    ; 278                                         ;
+; Embedded Multiplier 9-bit elements          ; 0                                           ;
+; Maximum fan-out node                        ; MDR:inst1|register_32bit:inst6|inst9[31]~32 ;
+; Maximum fan-out                             ; 32                                          ;
+; Total fan-out                               ; 68                                          ;
+; Average fan-out                             ; 0.24                                        ;
++---------------------------------------------+---------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |MAR                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 102  ; 0            ; |MAR                ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; |bank_regs                   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 278  ; 0            ; |bank_regs                                ; work         ;
+;    |MDR:inst1|               ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bank_regs|MDR:inst1                      ; work         ;
+;       |register_32bit:inst6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bank_regs|MDR:inst1|register_32bit:inst6 ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -230,7 +250,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Aug 19 09:49:50 2024
+    Info: Processing started: Mon Aug 19 10:16:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder2_4.bdf
@@ -279,9 +299,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file mdr.bdf
     Info (12023): Found entity 1: MDR
 Info (12021): Found 1 design units, including 1 entities, in source file mar.bdf
     Info (12023): Found entity 1: MAR
-Info (12127): Elaborating entity "MAR" for the top level hierarchy
-Info (12128): Elaborating entity "register_32bit" for hierarchy "register_32bit:inst"
-Info (12128): Elaborating entity "register_4bit" for hierarchy "register_32bit:inst|register_4bit:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file bank_regs.bdf
+    Info (12023): Found entity 1: bank_regs
+Info (12127): Elaborating entity "bank_regs" for the top level hierarchy
+Info (12128): Elaborating entity "MAR" for hierarchy "MAR:inst"
+Info (12128): Elaborating entity "register_32bit" for hierarchy "MAR:inst|register_32bit:inst"
+Info (12128): Elaborating entity "register_4bit" for hierarchy "MAR:inst|register_32bit:inst|register_4bit:inst"
 Warning (275043): Pin "OUTPUT[3..0]" is missing source
 Warning (275009): Pin "LOAD" not connected
 Warning (275009): Pin "CLOCK" not connected
@@ -304,112 +327,168 @@ Warning (275008): Primitive "NAND2" of instance "inst6" not used
 Warning (275008): Primitive "NAND2" of instance "inst7" not used
 Warning (275008): Primitive "NAND2" of instance "inst8" not used
 Warning (275008): Primitive "NAND2" of instance "inst9" not used
+Info (12128): Elaborating entity "MBR" for hierarchy "MBR:inst3"
+Info (12128): Elaborating entity "mbr_extensor" for hierarchy "MBR:inst3|mbr_extensor:inst19"
+Info (12128): Elaborating entity "MDR" for hierarchy "MDR:inst1"
+Info (12128): Elaborating entity "H" for hierarchy "H:inst9"
+Info (12128): Elaborating entity "PC" for hierarchy "PC:inst2"
+Info (12128): Elaborating entity "SP" for hierarchy "SP:inst4"
+Info (12128): Elaborating entity "LV_initial_address" for hierarchy "SP:inst4|LV_initial_address:inst"
+Info (12128): Elaborating entity "LV" for hierarchy "LV:inst5"
+Info (12128): Elaborating entity "CPP" for hierarchy "CPP:inst6"
+Info (12128): Elaborating entity "CPP_initial_address" for hierarchy "CPP:inst6|CPP_initial_address:inst"
+Info (12128): Elaborating entity "TOS" for hierarchy "TOS:inst7"
+Info (12128): Elaborating entity "OPC" for hierarchy "OPC:inst8"
 Warning (13030): Reduced the following open-drain buffers that are fed by GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[31]" to the output pin "DATA_ADDR[31]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[30]" to the output pin "DATA_ADDR[30]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[29]" to the output pin "DATA_ADDR[29]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[28]" to the output pin "DATA_ADDR[28]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[27]" to the output pin "DATA_ADDR[27]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[26]" to the output pin "DATA_ADDR[26]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[25]" to the output pin "DATA_ADDR[25]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[24]" to the output pin "DATA_ADDR[24]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[23]" to the output pin "DATA_ADDR[23]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[22]" to the output pin "DATA_ADDR[22]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[21]" to the output pin "DATA_ADDR[21]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[20]" to the output pin "DATA_ADDR[20]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[19]" to the output pin "DATA_ADDR[19]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[18]" to the output pin "DATA_ADDR[18]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[17]" to the output pin "DATA_ADDR[17]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[16]" to the output pin "DATA_ADDR[16]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[15]" to the output pin "DATA_ADDR[15]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[14]" to the output pin "DATA_ADDR[14]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[13]" to the output pin "DATA_ADDR[13]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[12]" to the output pin "DATA_ADDR[12]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[11]" to the output pin "DATA_ADDR[11]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[10]" to the output pin "DATA_ADDR[10]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[9]" to the output pin "DATA_ADDR[9]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[8]" to the output pin "DATA_ADDR[8]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[7]" to the output pin "DATA_ADDR[7]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[6]" to the output pin "DATA_ADDR[6]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[5]" to the output pin "DATA_ADDR[5]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[4]" to the output pin "DATA_ADDR[4]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[3]" to the output pin "DATA_ADDR[3]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[2]" to the output pin "DATA_ADDR[2]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[1]" to the output pin "DATA_ADDR[1]" to GND
-    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "register_32bit:inst|inst10[0]" to the output pin "DATA_ADDR[0]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[31]" to the output pin "MAR[31]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[30]" to the output pin "MAR[30]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[29]" to the output pin "MAR[29]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[28]" to the output pin "MAR[28]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[27]" to the output pin "MAR[27]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[26]" to the output pin "MAR[26]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[25]" to the output pin "MAR[25]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[24]" to the output pin "MAR[24]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[23]" to the output pin "MAR[23]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[22]" to the output pin "MAR[22]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[21]" to the output pin "MAR[21]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[20]" to the output pin "MAR[20]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[19]" to the output pin "MAR[19]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[18]" to the output pin "MAR[18]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[17]" to the output pin "MAR[17]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[16]" to the output pin "MAR[16]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[15]" to the output pin "MAR[15]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[14]" to the output pin "MAR[14]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[13]" to the output pin "MAR[13]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[12]" to the output pin "MAR[12]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[11]" to the output pin "MAR[11]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[10]" to the output pin "MAR[10]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[9]" to the output pin "MAR[9]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[8]" to the output pin "MAR[8]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[7]" to the output pin "MAR[7]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[6]" to the output pin "MAR[6]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[5]" to the output pin "MAR[5]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[4]" to the output pin "MAR[4]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[3]" to the output pin "MAR[3]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[2]" to the output pin "MAR[2]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[1]" to the output pin "MAR[1]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MAR:inst|register_32bit:inst|inst10[0]" to the output pin "MAR[0]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[7]" to the output pin "MBR_OUT[7]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[6]" to the output pin "MBR_OUT[6]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[5]" to the output pin "MBR_OUT[5]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[4]" to the output pin "MBR_OUT[4]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[3]" to the output pin "MBR_OUT[3]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[2]" to the output pin "MBR_OUT[2]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[1]" to the output pin "MBR_OUT[1]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "MBR:inst3|register_32bit:inst7|inst10[0]" to the output pin "MBR_OUT[0]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[31]" to the output pin "OUT_A[31]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[30]" to the output pin "OUT_A[30]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[29]" to the output pin "OUT_A[29]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[28]" to the output pin "OUT_A[28]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[27]" to the output pin "OUT_A[27]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[26]" to the output pin "OUT_A[26]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[25]" to the output pin "OUT_A[25]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[24]" to the output pin "OUT_A[24]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[23]" to the output pin "OUT_A[23]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[22]" to the output pin "OUT_A[22]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[21]" to the output pin "OUT_A[21]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[20]" to the output pin "OUT_A[20]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[19]" to the output pin "OUT_A[19]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[18]" to the output pin "OUT_A[18]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[17]" to the output pin "OUT_A[17]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[16]" to the output pin "OUT_A[16]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[15]" to the output pin "OUT_A[15]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[14]" to the output pin "OUT_A[14]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[13]" to the output pin "OUT_A[13]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[12]" to the output pin "OUT_A[12]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[11]" to the output pin "OUT_A[11]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[10]" to the output pin "OUT_A[10]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[9]" to the output pin "OUT_A[9]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[8]" to the output pin "OUT_A[8]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[7]" to the output pin "OUT_A[7]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[6]" to the output pin "OUT_A[6]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[5]" to the output pin "OUT_A[5]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[4]" to the output pin "OUT_A[4]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[3]" to the output pin "OUT_A[3]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[2]" to the output pin "OUT_A[2]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[1]" to the output pin "OUT_A[1]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "H:inst9|register_32bit:inst1|inst9[0]" to the output pin "OUT_A[0]" to GND
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DATA_ADDR[31]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[30]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[29]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[28]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[27]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[26]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[25]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[24]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[23]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[22]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[21]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[20]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[19]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[18]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[17]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[16]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[15]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[14]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[13]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[12]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[11]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[10]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[9]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[8]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[7]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[6]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[5]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[4]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[3]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[2]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[1]" is stuck at GND
-    Warning (13410): Pin "DATA_ADDR[0]" is stuck at GND
+    Warning (13410): Pin "MAR[31]" is stuck at GND
+    Warning (13410): Pin "MAR[30]" is stuck at GND
+    Warning (13410): Pin "MAR[29]" is stuck at GND
+    Warning (13410): Pin "MAR[28]" is stuck at GND
+    Warning (13410): Pin "MAR[27]" is stuck at GND
+    Warning (13410): Pin "MAR[26]" is stuck at GND
+    Warning (13410): Pin "MAR[25]" is stuck at GND
+    Warning (13410): Pin "MAR[24]" is stuck at GND
+    Warning (13410): Pin "MAR[23]" is stuck at GND
+    Warning (13410): Pin "MAR[22]" is stuck at GND
+    Warning (13410): Pin "MAR[21]" is stuck at GND
+    Warning (13410): Pin "MAR[20]" is stuck at GND
+    Warning (13410): Pin "MAR[19]" is stuck at GND
+    Warning (13410): Pin "MAR[18]" is stuck at GND
+    Warning (13410): Pin "MAR[17]" is stuck at GND
+    Warning (13410): Pin "MAR[16]" is stuck at GND
+    Warning (13410): Pin "MAR[15]" is stuck at GND
+    Warning (13410): Pin "MAR[14]" is stuck at GND
+    Warning (13410): Pin "MAR[13]" is stuck at GND
+    Warning (13410): Pin "MAR[12]" is stuck at GND
+    Warning (13410): Pin "MAR[11]" is stuck at GND
+    Warning (13410): Pin "MAR[10]" is stuck at GND
+    Warning (13410): Pin "MAR[9]" is stuck at GND
+    Warning (13410): Pin "MAR[8]" is stuck at GND
+    Warning (13410): Pin "MAR[7]" is stuck at GND
+    Warning (13410): Pin "MAR[6]" is stuck at GND
+    Warning (13410): Pin "MAR[5]" is stuck at GND
+    Warning (13410): Pin "MAR[4]" is stuck at GND
+    Warning (13410): Pin "MAR[3]" is stuck at GND
+    Warning (13410): Pin "MAR[2]" is stuck at GND
+    Warning (13410): Pin "MAR[1]" is stuck at GND
+    Warning (13410): Pin "MAR[0]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[7]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[6]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[5]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[4]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[3]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[2]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[1]" is stuck at GND
+    Warning (13410): Pin "MBR_OUT[0]" is stuck at GND
+    Warning (13410): Pin "OUT_A[31]" is stuck at GND
+    Warning (13410): Pin "OUT_A[30]" is stuck at GND
+    Warning (13410): Pin "OUT_A[29]" is stuck at GND
+    Warning (13410): Pin "OUT_A[28]" is stuck at GND
+    Warning (13410): Pin "OUT_A[27]" is stuck at GND
+    Warning (13410): Pin "OUT_A[26]" is stuck at GND
+    Warning (13410): Pin "OUT_A[25]" is stuck at GND
+    Warning (13410): Pin "OUT_A[24]" is stuck at GND
+    Warning (13410): Pin "OUT_A[23]" is stuck at GND
+    Warning (13410): Pin "OUT_A[22]" is stuck at GND
+    Warning (13410): Pin "OUT_A[21]" is stuck at GND
+    Warning (13410): Pin "OUT_A[20]" is stuck at GND
+    Warning (13410): Pin "OUT_A[19]" is stuck at GND
+    Warning (13410): Pin "OUT_A[18]" is stuck at GND
+    Warning (13410): Pin "OUT_A[17]" is stuck at GND
+    Warning (13410): Pin "OUT_A[16]" is stuck at GND
+    Warning (13410): Pin "OUT_A[15]" is stuck at GND
+    Warning (13410): Pin "OUT_A[14]" is stuck at GND
+    Warning (13410): Pin "OUT_A[13]" is stuck at GND
+    Warning (13410): Pin "OUT_A[12]" is stuck at GND
+    Warning (13410): Pin "OUT_A[11]" is stuck at GND
+    Warning (13410): Pin "OUT_A[10]" is stuck at GND
+    Warning (13410): Pin "OUT_A[9]" is stuck at GND
+    Warning (13410): Pin "OUT_A[8]" is stuck at GND
+    Warning (13410): Pin "OUT_A[7]" is stuck at GND
+    Warning (13410): Pin "OUT_A[6]" is stuck at GND
+    Warning (13410): Pin "OUT_A[5]" is stuck at GND
+    Warning (13410): Pin "OUT_A[4]" is stuck at GND
+    Warning (13410): Pin "OUT_A[3]" is stuck at GND
+    Warning (13410): Pin "OUT_A[2]" is stuck at GND
+    Warning (13410): Pin "OUT_A[1]" is stuck at GND
+    Warning (13410): Pin "OUT_A[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 70 input pin(s) that do not drive logic
+Warning (21074): Design contains 105 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "LOAD"
-    Warning (15610): No output dependent on input pin "MIR[35]"
-    Warning (15610): No output dependent on input pin "MIR[34]"
-    Warning (15610): No output dependent on input pin "MIR[33]"
-    Warning (15610): No output dependent on input pin "MIR[32]"
-    Warning (15610): No output dependent on input pin "MIR[31]"
-    Warning (15610): No output dependent on input pin "MIR[30]"
-    Warning (15610): No output dependent on input pin "MIR[29]"
-    Warning (15610): No output dependent on input pin "MIR[28]"
-    Warning (15610): No output dependent on input pin "MIR[27]"
-    Warning (15610): No output dependent on input pin "MIR[26]"
-    Warning (15610): No output dependent on input pin "MIR[25]"
-    Warning (15610): No output dependent on input pin "MIR[24]"
-    Warning (15610): No output dependent on input pin "MIR[23]"
-    Warning (15610): No output dependent on input pin "MIR[22]"
-    Warning (15610): No output dependent on input pin "MIR[21]"
-    Warning (15610): No output dependent on input pin "MIR[20]"
-    Warning (15610): No output dependent on input pin "MIR[19]"
-    Warning (15610): No output dependent on input pin "MIR[18]"
-    Warning (15610): No output dependent on input pin "MIR[17]"
-    Warning (15610): No output dependent on input pin "MIR[16]"
-    Warning (15610): No output dependent on input pin "MIR[15]"
-    Warning (15610): No output dependent on input pin "MIR[14]"
-    Warning (15610): No output dependent on input pin "MIR[13]"
-    Warning (15610): No output dependent on input pin "MIR[12]"
-    Warning (15610): No output dependent on input pin "MIR[11]"
-    Warning (15610): No output dependent on input pin "MIR[10]"
-    Warning (15610): No output dependent on input pin "MIR[9]"
-    Warning (15610): No output dependent on input pin "MIR[8]"
-    Warning (15610): No output dependent on input pin "MIR[7]"
-    Warning (15610): No output dependent on input pin "MIR[6]"
-    Warning (15610): No output dependent on input pin "MIR[5]"
-    Warning (15610): No output dependent on input pin "MIR[4]"
-    Warning (15610): No output dependent on input pin "MIR[3]"
-    Warning (15610): No output dependent on input pin "MIR[2]"
-    Warning (15610): No output dependent on input pin "MIR[1]"
-    Warning (15610): No output dependent on input pin "MIR[0]"
     Warning (15610): No output dependent on input pin "CLOCK"
     Warning (15610): No output dependent on input pin "IN_C[31]"
     Warning (15610): No output dependent on input pin "IN_C[30]"
@@ -443,13 +522,85 @@ Warning (21074): Design contains 70 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IN_C[2]"
     Warning (15610): No output dependent on input pin "IN_C[1]"
     Warning (15610): No output dependent on input pin "IN_C[0]"
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 70 input pins
-    Info (21059): Implemented 32 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 160 warnings
+    Warning (15610): No output dependent on input pin "MIR[35]"
+    Warning (15610): No output dependent on input pin "MIR[34]"
+    Warning (15610): No output dependent on input pin "MIR[33]"
+    Warning (15610): No output dependent on input pin "MIR[32]"
+    Warning (15610): No output dependent on input pin "MIR[31]"
+    Warning (15610): No output dependent on input pin "MIR[30]"
+    Warning (15610): No output dependent on input pin "MIR[29]"
+    Warning (15610): No output dependent on input pin "MIR[28]"
+    Warning (15610): No output dependent on input pin "MIR[27]"
+    Warning (15610): No output dependent on input pin "MIR[26]"
+    Warning (15610): No output dependent on input pin "MIR[25]"
+    Warning (15610): No output dependent on input pin "MIR[24]"
+    Warning (15610): No output dependent on input pin "MIR[23]"
+    Warning (15610): No output dependent on input pin "MIR[22]"
+    Warning (15610): No output dependent on input pin "MIR[21]"
+    Warning (15610): No output dependent on input pin "MIR[20]"
+    Warning (15610): No output dependent on input pin "MIR[19]"
+    Warning (15610): No output dependent on input pin "MIR[18]"
+    Warning (15610): No output dependent on input pin "MIR[17]"
+    Warning (15610): No output dependent on input pin "MIR[16]"
+    Warning (15610): No output dependent on input pin "MIR[15]"
+    Warning (15610): No output dependent on input pin "MIR[14]"
+    Warning (15610): No output dependent on input pin "MIR[13]"
+    Warning (15610): No output dependent on input pin "MIR[12]"
+    Warning (15610): No output dependent on input pin "MIR[11]"
+    Warning (15610): No output dependent on input pin "MIR[10]"
+    Warning (15610): No output dependent on input pin "MIR[9]"
+    Warning (15610): No output dependent on input pin "MIR[8]"
+    Warning (15610): No output dependent on input pin "MIR[7]"
+    Warning (15610): No output dependent on input pin "MIR[5]"
+    Warning (15610): No output dependent on input pin "MIR[4]"
+    Warning (15610): No output dependent on input pin "MBR_IN[7]"
+    Warning (15610): No output dependent on input pin "MBR_IN[6]"
+    Warning (15610): No output dependent on input pin "MBR_IN[5]"
+    Warning (15610): No output dependent on input pin "MBR_IN[4]"
+    Warning (15610): No output dependent on input pin "MBR_IN[3]"
+    Warning (15610): No output dependent on input pin "MBR_IN[2]"
+    Warning (15610): No output dependent on input pin "MBR_IN[1]"
+    Warning (15610): No output dependent on input pin "MBR_IN[0]"
+    Warning (15610): No output dependent on input pin "MDR_IN[31]"
+    Warning (15610): No output dependent on input pin "MDR_IN[30]"
+    Warning (15610): No output dependent on input pin "MDR_IN[29]"
+    Warning (15610): No output dependent on input pin "MDR_IN[28]"
+    Warning (15610): No output dependent on input pin "MDR_IN[27]"
+    Warning (15610): No output dependent on input pin "MDR_IN[26]"
+    Warning (15610): No output dependent on input pin "MDR_IN[25]"
+    Warning (15610): No output dependent on input pin "MDR_IN[24]"
+    Warning (15610): No output dependent on input pin "MDR_IN[23]"
+    Warning (15610): No output dependent on input pin "MDR_IN[22]"
+    Warning (15610): No output dependent on input pin "MDR_IN[21]"
+    Warning (15610): No output dependent on input pin "MDR_IN[20]"
+    Warning (15610): No output dependent on input pin "MDR_IN[19]"
+    Warning (15610): No output dependent on input pin "MDR_IN[18]"
+    Warning (15610): No output dependent on input pin "MDR_IN[17]"
+    Warning (15610): No output dependent on input pin "MDR_IN[16]"
+    Warning (15610): No output dependent on input pin "MDR_IN[15]"
+    Warning (15610): No output dependent on input pin "MDR_IN[14]"
+    Warning (15610): No output dependent on input pin "MDR_IN[13]"
+    Warning (15610): No output dependent on input pin "MDR_IN[12]"
+    Warning (15610): No output dependent on input pin "MDR_IN[11]"
+    Warning (15610): No output dependent on input pin "MDR_IN[10]"
+    Warning (15610): No output dependent on input pin "MDR_IN[9]"
+    Warning (15610): No output dependent on input pin "MDR_IN[8]"
+    Warning (15610): No output dependent on input pin "MDR_IN[7]"
+    Warning (15610): No output dependent on input pin "MDR_IN[6]"
+    Warning (15610): No output dependent on input pin "MDR_IN[5]"
+    Warning (15610): No output dependent on input pin "MDR_IN[4]"
+    Warning (15610): No output dependent on input pin "MDR_IN[3]"
+    Warning (15610): No output dependent on input pin "MDR_IN[2]"
+    Warning (15610): No output dependent on input pin "MDR_IN[1]"
+    Warning (15610): No output dependent on input pin "MDR_IN[0]"
+Info (21057): Implemented 279 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 110 input pins
+    Info (21059): Implemented 168 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 275 warnings
     Info: Peak virtual memory: 4602 megabytes
-    Info: Processing ended: Mon Aug 19 09:49:51 2024
+    Info: Processing ended: Mon Aug 19 10:16:44 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
