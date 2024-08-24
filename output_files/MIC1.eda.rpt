@@ -1,5 +1,5 @@
 EDA Netlist Writer report for MIC1
-Mon Aug 19 10:17:00 2024
+Sat Aug 24 12:58:17 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Aug 19 10:17:00 2024 ;
+; EDA Netlist Writer Status ; Successful - Sat Aug 24 12:58:17 2024 ;
 ; Revision Name             ; MIC1                                  ;
 ; Top-level Entity Name     ; bank_regs                             ;
 ; Family                    ; Cyclone II                            ;
@@ -50,7 +50,8 @@ applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; On                        ;
+; Generate netlist for functional simulation only                                                   ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -65,13 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                   ;
-+--------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------+
-; C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/simulation/modelsim/MIC1.vo ;
-+--------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------+
+; Simulation Generated Files                                                   ;
++------------------------------------------------------------------------------+
+; Generated Files                                                              ;
++------------------------------------------------------------------------------+
+; C:/Users/dirce/Downloads/DUDA/MIC-1-main/simulation/modelsim/MIC1.vo         ;
+; C:/Users/dirce/Downloads/DUDA/MIC-1-main/simulation/modelsim/MIC1_fast.vo    ;
+; C:/Users/dirce/Downloads/DUDA/MIC-1-main/simulation/modelsim/MIC1_v.sdo      ;
+; C:/Users/dirce/Downloads/DUDA/MIC-1-main/simulation/modelsim/MIC1_v_fast.sdo ;
++------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Aug 19 10:17:00 2024
+    Info: Processing started: Sat Aug 24 12:58:17 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
-Info (204019): Generated file MIC1.vo in folder "C:/Users/dudat/OneDrive/Documentos/ENGENHARIA DA COMPUTAÇÃO/3° PERÍODO/AOC/MIC-1/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "MIC1.vo", "MIC1_fast.vo", "MIC1_v.sdo" and "MIC1_v_fast.sdo" in directory "C:/Users/dirce/Downloads/DUDA/MIC-1-main/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4539 megabytes
-    Info: Processing ended: Mon Aug 19 10:17:00 2024
+    Info: Processing ended: Sat Aug 24 12:58:17 2024
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

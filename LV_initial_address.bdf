@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(output)
-	(rect 712 352 888 368)
+	(rect 552 352 728 368)
 	(text "OUTPUT" (rect 1 6 39 16)(font "Arial" (font_size 6)))
 	(text "LV_INIT[31..0]" (rect 90 4 161 16)(font "Arial" ))
 	(pt 0 8)
@@ -196,29 +196,29 @@ applicable agreement for further details.
 	(flipy)
 )
 (connector
-	(text "LV_INIT[6..5]" (rect 321 438 333 504)(font "Arial" )(vertical))
+	(text "LV_INIT[6..5]" (rect 305 294 317 360)(font "Arial" )(vertical))
 	(pt 320 360)
 	(pt 320 216)
 	(bus)
 )
 (connector
-	(text "LV_INIT[31..8]" (rect 361 438 373 509)(font "Arial" )(vertical))
+	(text "LV_INIT[31..8]" (rect 345 286 357 357)(font "Arial" )(vertical))
 	(pt 360 360)
 	(pt 360 216)
 	(bus)
 )
 (connector
-	(text "LV_INIT[7]" (rect 433 412 445 465)(font "Arial" )(vertical))
+	(text "LV_INIT[7]" (rect 417 300 429 353)(font "Arial" )(vertical))
 	(pt 432 360)
 	(pt 432 208)
 )
 (connector
-	(text "LV_INIT[4]" (rect 465 412 477 465)(font "Arial" )(vertical))
+	(text "LV_INIT[4]" (rect 449 300 461 353)(font "Arial" )(vertical))
 	(pt 464 360)
 	(pt 464 208)
 )
 (connector
-	(text "LV_INIT[3..0]" (rect 281 438 293 504)(font "Arial" )(vertical))
+	(text "LV_INIT[3..0]" (rect 265 294 277 360)(font "Arial" )(vertical))
 	(pt 280 360)
 	(pt 280 216)
 	(bus)
@@ -289,7 +289,7 @@ applicable agreement for further details.
 )
 (connector
 	(pt 464 360)
-	(pt 712 360)
+	(pt 552 360)
 	(bus)
 )
 (junction (pt 464 360))

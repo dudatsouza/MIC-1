@@ -3,199 +3,237 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\dudat\OneDrive\Área de Trabalho\MIC1 - Maira e Maria Eduarda\simulation\qsim
-vregister_4bit
-Z1 I=_6f_TiQiM=5:3>5@QlM=3
-Z2 VjPoAcF?h<[;Xji5j2kIPB0
-Z3 dC:\Users\maira\OneDrive - aluno.cefetmg.br\Documentos\AOC-I\MIC1 - Maira e Maria Eduarda\MIC1 - Maira e Maria Eduarda\simulation\qsim
-Z4 w1721041758
-Z5 8MIC1.vo
-Z6 FMIC1.vo
+vbank_regs
+Z1 !s100 >]XZP^9@?cMP?ejG[9XnU2
+Z2 I@3GTRb<XRWkkPRT@2>Rf30
+Z3 VV80?40;kbCgM3E=INh5<H1
+Z4 dC:\Users\dirce\Downloads\MIC-1-main\MIC-1-main\simulation\qsim
+Z5 w1724448671
+Z6 8MIC1.vo
+Z7 FMIC1.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|MIC1.vo|
-Z9 o-work work -O0
-!i10b 1
-Z10 !s100 aNVkfPm9Le1k7zI=Zk54G1
-!s85 0
-Z11 !s108 1721041759.725000
+Z9 !s90 -work|work|MIC1.vo|
+Z10 o-work work -O0
+Z11 !s108 1724448672.863000
 Z12 !s107 MIC1.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vbank_regs_vlg_vec_tst
+Z13 !s100 =g1zJl@[X>6FO]JYjM95@3
+Z14 IFmW]6hg3aA<8>BHZhIb5N2
+Z15 VD[<=9QoUgG_j6gk01>K2;1
+R4
+R5
+Z16 8MIC1.vt
+Z17 FMIC1.vt
+L0 29
+R8
+r1
+31
+Z18 !s90 -work|work|MIC1.vt|
+R10
+Z19 !s108 1724448673.001000
+Z20 !s107 MIC1.vt|
+!i10b 1
+!s85 0
+!s101 -O0
+vregister_4bit
+Z21 IOIl3>FZ^5zLDzSHUUT:7l1
+Z22 VZ?d8DjgIzYOnAhAcF_SFE0
+R4
+Z23 w1724460752
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z24 !s100 ggJl2IZz@h_7D8A]ZD>iR3
+!s85 0
+Z25 !s108 1724460753.641000
+R12
 !s101 -O0
 vregister_4bit_vlg_check_tst
 !i10b 1
-!s100 V^<@D9e4BgW5i[aeD_FdW2
-Io?2eHba6O>`gY3>BOYDHO3
-VMgQ?@BO?[0JNPm[B`[`e_0
-R3
-Z13 w1721041757
-Z14 8MIC1.vt
-Z15 FMIC1.vt
-L0 59
-R7
+!s100 S`=lzK]n8KMj59<<1X8Fk3
+Ii;@eRBK@V2cJP>c5H7e>f2
+Z26 VMgQ?@BO?[0JNPm[B`[`e_0
+R4
+Z27 w1724460751
+R16
+R17
+L0 63
+R8
 r1
 !s85 0
 31
-Z16 !s108 1721041759.892000
-Z17 !s107 MIC1.vt|
-Z18 !s90 -work|work|MIC1.vt|
+Z28 !s108 1724460753.736000
+Z29 !s107 MIC1.vt|
+R18
 !s101 -O0
-R9
+R10
 vregister_4bit_vlg_sample_tst
 !i10b 1
-!s100 Z;NR]^aU:9Bc86_G[:FlZ2
-Ib>^ce3d^=G``3XGCAX;nz1
-V2@l^K:Q28zgdCEoZ7FA5U3
-R3
-R13
-R14
-R15
+!s100 RZ>EEN9z0Yfe4Vm^X^]dB0
+IoUFf6afkgLn^W1g7:LBak1
+V>?<o@P5FMD0;S<@hkzh3F3
+R4
+R27
+R16
+R17
 L0 29
-R7
+R8
 r1
 !s85 0
 31
-R16
-R17
+R28
+R29
 R18
 !s101 -O0
-R9
+R10
 vregister_4bit_vlg_vec_tst
 !i10b 1
-!s100 @Y:cWbj@88iikWhSJOm2X0
-I4;jU@P@3oA9jOMJ?^mE`02
-V7WT<>_InXjA7Uc0g_9RYm0
-R3
-R13
-R14
-R15
-L0 207
-R7
+!s100 9gDX^k3IiAUPKN=I3gYCk2
+IX]2F[JC3GRQRd^Kl]>Noz0
+Z30 V7WT<>_InXjA7Uc0g_9RYm0
+R4
+R27
+R16
+R17
+L0 211
+R8
 r1
 !s85 0
 31
-R16
-R17
+R28
+R29
 R18
 !s101 -O0
-R9
+R10
 vShifter
-Z19 !s100 ^13b5zOULM?]iI2g5BSha0
-Z20 IF6jAS4c]LkGQYhkL_Q:ML3
-Z21 V?G`?YIE>Dzd[_:mIU[EGz2
-R3
-Z22 w1721038785
-R5
+Z31 !s100 ^13b5zOULM?]iI2g5BSha0
+Z32 IF6jAS4c]LkGQYhkL_Q:ML3
+Z33 V?G`?YIE>Dzd[_:mIU[EGz2
+Z34 dC:\Users\maira\OneDrive - aluno.cefetmg.br\Documentos\AOC-I\MIC1 - Maira e Maria Eduarda\MIC1 - Maira e Maria Eduarda\simulation\qsim
+Z35 w1721038785
 R6
-L0 31
 R7
+L0 31
+R8
 r1
 31
-R8
 R9
-Z23 n@shifter
-Z24 !s108 1721038786.566000
+R10
+Z36 n@shifter
+Z37 !s108 1721038786.566000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vShifter_vlg_check_tst
-Z25 !s100 amazlVUANOg2O9I[`5^:z2
-Z26 IT`a0W5mz8O0;4fVmdl8510
-Z27 VLB?YPU:Jfkf0W::RSQ49g0
-R3
-Z28 w1721038784
-R14
-R15
+Z38 !s100 amazlVUANOg2O9I[`5^:z2
+Z39 IT`a0W5mz8O0;4fVmdl8510
+Z40 VLB?YPU:Jfkf0W::RSQ49g0
+R34
+Z41 w1721038784
+R16
+R17
 L0 59
-R7
+R8
 r1
 31
-Z29 !s108 1721038786.780000
-Z30 !s107 MIC1.vt|
+Z42 !s108 1721038786.780000
+R20
 R18
-R9
-Z31 n@shifter_vlg_check_tst
+R10
+Z43 n@shifter_vlg_check_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vShifter_vlg_sample_tst
-Z32 !s100 zoX_E;[OUn=3HP^KIUgoH1
-Z33 If4ZJ<[O`b27KjOPWeBfY`1
-Z34 VMTZ79WOY3k2HS1l[CEV]20
-R3
-R28
-R14
-R15
+Z44 !s100 zoX_E;[OUn=3HP^KIUgoH1
+Z45 If4ZJ<[O`b27KjOPWeBfY`1
+Z46 VMTZ79WOY3k2HS1l[CEV]20
+R34
+R41
+R16
+R17
 L0 29
-R7
+R8
 r1
 31
-R29
-R30
+R42
+R20
 R18
-R9
-Z35 n@shifter_vlg_sample_tst
+R10
+Z47 n@shifter_vlg_sample_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vShifter_vlg_vec_tst
-Z36 IRN51O<6iLUN=8@CiUg[FR1
-Z37 VThP1n42I@5dzVoEFm@_mS2
-R3
-R28
-R14
-R15
-Z38 L0 765
-R7
+Z48 IRN51O<6iLUN=8@CiUg[FR1
+Z49 VThP1n42I@5dzVoEFm@_mS2
+R34
+R41
+R16
+R17
+Z50 L0 765
+R8
 r1
 31
-R29
-R30
+R42
+R20
 R18
-R9
-Z39 n@shifter_vlg_vec_tst
-Z40 !s100 HiJ69V2`[hX1SLHMN35d>1
+R10
+Z51 n@shifter_vlg_vec_tst
+Z52 !s100 HiJ69V2`[hX1SLHMN35d>1
 !i10b 1
 !s85 0
 !s101 -O0
 vULA_32bit
-Z41 !s100 X]ncRBBiOKA`VmAG4:9bG1
-Z42 Ie41H8jg^2L>1mI8m=`aiP1
-Z43 VC@1Qm2C?2M834j65NZ`4W2
-Z44 dC:\Users\dudat\OneDrive\Área de Trabalho\MIC1 - Maira e Maria Eduarda\simulation\qsim
-Z45 w1712537929
-R5
+Z53 !s100 X]ncRBBiOKA`VmAG4:9bG1
+Z54 Ie41H8jg^2L>1mI8m=`aiP1
+Z55 VC@1Qm2C?2M834j65NZ`4W2
+Z56 dC:\Users\dudat\OneDrive\Área de Trabalho\MIC1 - Maira e Maria Eduarda\simulation\qsim
+Z57 w1712537929
 R6
-L0 31
 R7
+L0 31
+R8
 r1
 31
-R8
 R9
-Z46 n@u@l@a_32bit
-Z47 !s108 1712537930.357000
+R10
+Z58 n@u@l@a_32bit
+Z59 !s108 1712537930.357000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vULA_32bit_vlg_vec_tst
-Z48 !s100 M7<Cnk?K`nfWZgLhR1JhZ0
-Z49 IN11H7@>Id>oE5BGm96>3n0
-Z50 VJ=3lTQCEj3_FZ<ZSZ:UI>2
-R44
-Z51 w1712537928
-R14
-R15
+Z60 !s100 M7<Cnk?K`nfWZgLhR1JhZ0
+Z61 IN11H7@>Id>oE5BGm96>3n0
+Z62 VJ=3lTQCEj3_FZ<ZSZ:UI>2
+R56
+Z63 w1712537928
+R16
+R17
 L0 29
-R7
+R8
 r1
 31
 R18
-R9
-Z52 n@u@l@a_32bit_vlg_vec_tst
-Z53 !s108 1712537930.514000
-R30
+R10
+Z64 n@u@l@a_32bit_vlg_vec_tst
+Z65 !s108 1712537930.514000
+R20
 !i10b 1
 !s85 0
 !s101 -O0

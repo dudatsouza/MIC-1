@@ -22,7 +22,13 @@
 # Loading cycloneii_ver.cycloneii_asynch_io
 # Loading work.register_4bit_vlg_sample_tst
 # Loading work.register_4bit_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from MIC1_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from MIC1_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /register_4bit_vlg_vec_tst File: MIC1.vt
 # Simulation passed !
-# ** Note: $finish    : MIC1.vt(203)
+# ** Note: $finish    : MIC1.vt(207)
 #    Time: 1 us  Iteration: 0  Instance: /register_4bit_vlg_vec_tst/tb_out
